@@ -11,6 +11,9 @@
     "name": "Jan T. Sott",
     "url": "http://github.com/idleberg"
   },
+  "keywords": [
+    "php"
+  ],
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
