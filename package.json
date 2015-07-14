@@ -1,0 +1,27 @@
+{
+  "name": "drunken-php",
+  "version": "0.0.0",
+  "description": "Atom snippets for PHP, right kinda wrong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idleberg/atom-drunken-php"
+  },
+  "license": "CC-BY-SA 4.0",
+  "author": {
+    "name": "Jan T. Sott",
+    "url": "http://github.com/idleberg"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-coffeelint": "^0.5.0",
+    "gulp-json-lint": "^0.1.0",
+    "gulp-jsonlint": "^1.0.1",
+    "gulp-recess": "^1.1.1"
+  },
+  "scripts": {
+    "test": "gulp lint"
+  }
+}

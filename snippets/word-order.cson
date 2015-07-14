@@ -1,0 +1,988 @@
+'.source.php':
+  '%aborted_connection':
+    'prefix': 'aborted_connection'
+    'body': 'connection_aborted(${1});'
+  '%add_bc':
+    'prefix': 'add_bc'
+    'body': 'bcadd(${1:${2:left_operand}}, ${3:right_operand}${4:, ${5:scale}});'
+  '%add_date':
+    'prefix': 'add_date'
+    'body': 'date_add(${1:${2:time}}${3:, ${4:interval}});'
+  '%alias_class':
+    'prefix': 'alias_class'
+    'body': 'class_alias(${1:${2:original}}, ${4:alias}${5:, ${6:autoload}});'
+  '%alias_class:false':
+    'prefix': 'alias_class:false'
+    'body': 'class_alias(${1:${2:original}}, ${3:alias}, false);'
+  '%alias_class:true':
+    'prefix': 'alias_class:true'
+    'body': 'class_alias(${1:${2:original}}, ${3:alias}, true);'
+  '%alnum_ctype':
+    'prefix': 'alnum_ctype'
+    'body': 'ctype_alnum(${1:text});'
+  '%alpha_ctype':
+    'prefix': 'alpha_ctype'
+    'body': 'ctype_alpha(${1:text});'
+  '%browser_get':
+    'prefix': 'browser_get'
+    'body': 'get_browser(${1:user_agent}${2:, ${3:return_array}});'
+  '%browser_get:false':
+    'prefix': 'browser_get:false'
+    'body': 'get_browser(${1:user_agent}${2:, false});'
+  '%browser_get:true':
+    'prefix': 'browser_get:true'
+    'body': 'get_browser(${1:user_agent}${2:, true});'
+  '%called_class_get':
+    'prefix': 'called_class_get'
+    'body': 'get_called_class();'
+  '%cfg_var_get':
+    'prefix': 'cfg_var_get'
+    'body': 'get_cfg_var(${1:option});'
+  '%chars_count':
+    'prefix': 'chars_count'
+    'body': 'count_chars(${1:${2:string}}${3:, ${4:mode}});'
+  '%chars_count:0':
+    'prefix': 'chars_count:0'
+    'body': 'count_chars(${1:string}, 0);'
+  '%chars_count:1':
+    'prefix': 'chars_count:1'
+    'body': 'count_chars(${1:string}, 1);'
+  '%chars_count:2':
+    'prefix': 'chars_count:2'
+    'body': 'count_chars(${1:string}, 2);'
+  '%chars_count:3':
+    'prefix': 'chars_count:3'
+    'body': 'count_chars(${1:string}, 3);'
+  '%chars_count:4':
+    'prefix': 'chars_count:4'
+    'body': 'count_chars(${1:string}, 4);'
+  '%checkdate':
+    'prefix': 'checkdate'
+    'body': 'checkdate(${1:${2:day}}, ${3:month}, ${4:year});'
+  '%chunk_array':
+    'prefix': 'chunk_array'
+    'body': 'array_chunk(${1:${2:array}}, ${3:size}, ${4:preserve_keys});'
+  '%chunk_array:preserve_keys':
+    'prefix': 'chunk_array:preserve_keys'
+    'body': 'array_chunk(${1:${2:array}}, ${3:size}, true);'
+  '%class_get':
+    'prefix': 'class_get'
+    'body': 'get_class(${1:object});'
+  '%class_methods_get':
+    'prefix': 'class_methods_get'
+    'body': 'get_class_methods(${1:class_name});'
+  '%class_vars_get':
+    'prefix': 'class_vars_get'
+    'body': 'get_class_vars(${1:class_name});'
+  '%classes_declared_get':
+    'prefix': 'classes_declared_get'
+    'body': 'get_declared_classes();'
+  '%close_bz':
+    'prefix': 'close_bz'
+    'body': 'bzclose(${1:bz});'
+  '%close_curl':
+    'prefix': 'close_curl'
+    'body': 'curl_close(${1:ch});'
+  '%cntrl_ctype':
+    'prefix': 'cntrl_ctype'
+    'body': 'ctype_cntrl(${1:text});'
+  '%combine_array':
+    'prefix': 'combine_array'
+    'body': 'array_combine(${1:${2:keys}}, ${3:values});'
+  '%comp_bc':
+    'prefix': 'comp_bc'
+    'body': 'bccomp(${1:${2:left_operand}}, ${3:right_operand}${4:, ${5:scale}});'
+  '%compare_version':
+    'prefix': 'compare_version'
+    'body': 'version_compare(${1:${2:version1}}, ${3:version2}${4:, ${5:operator}});'
+  '%compress_bz':
+    'prefix': 'compress_bz'
+    'body': 'bzcompress(${1:${2:source}}${3:, ${4:blocksize}${5:, ${6:workfactor}}});'
+  '%compress_bz:1':
+    'prefix': 'compress_bz:1'
+    'body': 'bzcompress(${1:${2:source}}, 1${3:, ${4:workfactor}});'
+  '%compress_bz:2':
+    'prefix': 'compress_bz:2'
+    'body': 'bzcompress(${1:${2:source}}, 2${3:, ${4:workfactor}});'
+  '%compress_bz:3':
+    'prefix': 'compress_bz:3'
+    'body': 'bzcompress(${1:${2:source}}, 3${3:, ${4:workfactor}});'
+  '%compress_bz:4':
+    'prefix': 'compress_bz:4'
+    'body': 'bzcompress(${1:${2:source}}, 4${3:, ${4:workfactor}});'
+  '%compress_bz:5':
+    'prefix': 'compress_bz:5'
+    'body': 'bzcompress(${1:${2:source}}, 5${3:, ${4:workfactor}});'
+  '%compress_bz:6':
+    'prefix': 'compress_bz:6'
+    'body': 'bzcompress(${1:${2:source}}, 6${3:, ${4:workfactor}});'
+  '%compress_bz:7':
+    'prefix': 'compress_bz:7'
+    'body': 'bzcompress(${1:${2:source}}, 7${3:, ${4:workfactor}});'
+  '%compress_bz:8':
+    'prefix': 'compress_bz:8'
+    'body': 'bzcompress(${1:${2:source}}, 8${3:, ${4:workfactor}});'
+  '%compress_bz:9':
+    'prefix': 'compress_bz:9'
+    'body': 'bzcompress(${1:${2:source}}, 9${3:, ${4:workfactor}});'
+  '%constants_defined_get':
+    'prefix': 'constants_defined_get'
+    'body': 'get_defined_constants(${1:categorize});'
+  '%constants_defined_get:false':
+    'prefix': 'constants_defined_get:false'
+    'body': 'get_defined_constants(false);'
+  '%constants_defined_get:true':
+    'prefix': 'constants_defined_get:true'
+    'body': 'get_defined_constants(true);'
+  '%convert_base':
+    'prefix': 'convert_base'
+    'body': 'base_convert(${1:number}, ${2:frombase}, ${3:tobase});'
+  '%cookie_set':
+    'prefix': 'cookie_set'
+    'body': 'setcookie(${1:name}${2:, ${3:value}${4:, ${5:expire}${6:, ${7:path}${8:, ${9:domain}${10:, ${11:secure}${12:, ${13:httponly}}}}}}});'
+  '%create_date':
+    'prefix': 'create_date'
+    'body': 'date_create(${1:${2:time}}${3:, ${4:timezone}});'
+  '%current_user_get':
+    'prefix': 'current_user_get'
+    'body': 'get_current_user();'
+  '%declared_classes_get':
+    'prefix': 'declared_classes_get'
+    'body': 'get_declared_classes();'
+  '%declared_interfaces_get':
+    'prefix': 'declared_interfaces_get'
+    'body': 'get_declared_interfaces();'
+  '%declared_traits_get':
+    'prefix': 'declared_traits_get'
+    'body': 'get_declared_traits();'
+  '%decode_json':
+    'prefix': 'decode_json'
+    'body': 'json_decode(${1:${2:json}}${3:, ${4:assoc}${5:, ${6:depth}${7:, ${8:options}}}});'
+  '%decode_json:JSON_BIGINT_AS_STRING':
+    'prefix': 'decode_json:JSON_BIGINT_AS_STRING'
+    'body': 'json_decode(${1:${2:json}}, ${3:assoc}, ${4:depth}, JSON_BIGINT_AS_STRING);'
+  '%decode_rawurl':
+    'prefix': 'decode_rawurl'
+    'body': 'rawurldecode(${1:str});'
+  '%decode_session':
+    'prefix': 'decode_session'
+    'body': 'session_decode(${1:data});'
+  '%decode_url':
+    'prefix': 'decode_url'
+    'body': 'urldecode(${1:str});'
+  '%decode_utf8':
+    'prefix': 'decode_utf8'
+    'body': 'utf8_decode(${1:data});'
+  '%decode_zlib':
+    'prefix': 'decode_zlib'
+    'body': 'zlib_decode(${1:data}${2:, ${3:max_decoded_len}});'
+  '%decompress_bz':
+    'prefix': 'decompress_bz'
+    'body': 'bzdecompress(${1:${2:source}}${3:, ${4:small}});'
+  '%decompress_bz:small':
+    'prefix': 'decompress_bz:small'
+    'body': 'bzdecompress(${1:${2:source}}, true);'
+  '%defined_constants_get':
+    'prefix': 'defined_constants_get'
+    'body': 'get_defined_constants(${1:categorize});'
+  '%defined_constants_get:false':
+    'prefix': 'defined_constants_get:false'
+    'body': 'get_defined_constants(false);'
+  '%defined_constants_get:true':
+    'prefix': 'defined_constants_get:true'
+    'body': 'get_defined_constants(true);'
+  '%defined_functions_get':
+    'prefix': 'defined_functions_get'
+    'body': 'get_defined_functions();'
+  '%defined_vars_get':
+    'prefix': 'defined_vars_get'
+    'body': 'get_defined_vars();'
+  '%diff_array':
+    'prefix': 'diff_array'
+    'body': 'array_diff(${1:${2:array1}}, ${3:array2});'
+  '%diff_array:3':
+    'prefix': 'diff_array:3'
+    'body': 'array_diff(${1:${2:array1}}, ${3:array2}, ${4:array3});'
+  '%diff_array:4':
+    'prefix': 'diff_array:4'
+    'body': 'array_diff(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4});'
+  '%diff_array:5':
+    'prefix': 'diff_array:5'
+    'body': 'array_diff(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4}, ${6:array5});'
+  '%digit_ctype':
+    'prefix': 'digit_ctype'
+    'body': 'ctype_digit(${1:text});'
+  '%dirclose':
+    'prefix': 'dirclose'
+    'body': 'closedir(${1:dir_handle});'
+  '%div_bc':
+    'prefix': 'div_bc'
+    'body': 'bcdiv(${1:${2:left_operand}}, ${3:right_operand}${4:, ${5:scale}});'
+  '%dns_get_mx':
+    'prefix': 'dns_get_mx'
+    'body': 'getmxrr(${1:hostname}, ${2:&mxhosts}${3:, ${4:&weight}});'
+  '%encode_json':
+    'prefix': 'encode_json'
+    'body': 'json_encode(${1:${2:value}}${3:, ${4:options}${5:, ${6:depth}}});'
+  '%encode_json:JSON_FORCE_OBJECT':
+    'prefix': 'encode_json:JSON_FORCE_OBJECT'
+    'body': 'json_encode(${1:${2:value}}, JSON_FORCE_OBJECT${3:, ${4:depth}});'
+  '%encode_json:JSON_HEX_AMP':
+    'prefix': 'encode_json:JSON_HEX_AMP'
+    'body': 'json_encode(${1:${2:value}}, JSON_HEX_AMP${3:, ${4:depth}});'
+  '%encode_json:JSON_HEX_APOS':
+    'prefix': 'encode_json:JSON_HEX_APOS'
+    'body': 'json_encode(${1:${2:value}}, JSON_HEX_APOS${3:, ${4:depth}});'
+  '%encode_json:JSON_HEX_QUOT':
+    'prefix': 'encode_json:JSON_HEX_QUOT'
+    'body': 'json_encode(${1:${2:value}}, JSON_HEX_QUOT${3:, ${4:depth}});'
+  '%encode_json:JSON_HEX_TAG':
+    'prefix': 'encode_json:JSON_HEX_TAG'
+    'body': 'json_encode(${1:${2:value}}, JSON_HEX_TAG${3:, ${4:depth}});'
+  '%encode_json:JSON_NUMERIC_CHECK':
+    'prefix': 'encode_json:JSON_NUMERIC_CHECK'
+    'body': 'json_encode(${1:${2:value}}, JSON_NUMERIC_CHECK${3:, ${4:depth}});'
+  '%encode_json:JSON_PRETTY_PRINT':
+    'prefix': 'encode_json:JSON_PRETTY_PRINT'
+    'body': 'json_encode(${1:${2:value}}, JSON_PRETTY_PRINT${3:, ${4:depth}});'
+  '%encode_json:JSON_UNESCAPED_SLASHES':
+    'prefix': 'encode_json:JSON_UNESCAPED_SLASHES'
+    'body': 'json_encode(${1:${2:value}}, JSON_UNESCAPED_SLASHES${3:, ${4:depth}});'
+  '%encode_json:JSON_UNESCAPED_UNICODE':
+    'prefix': 'encode_json:JSON_UNESCAPED_UNICODE'
+    'body': 'json_encode(${1:${2:value}}, JSON_UNESCAPED_UNICODE${3:, ${4:depth}});'
+  '%encode_rawurl':
+    'prefix': 'encode_rawurl'
+    'body': 'rawurlencode(${1:str});'
+  '%encode_session':
+    'prefix': 'encode_session'
+    'body': 'session_encode(${1:void});'
+  '%encode_url':
+    'prefix': 'encode_url'
+    'body': 'urlencode(${1:str});'
+  '%encode_utf8':
+    'prefix': 'encode_utf8'
+    'body': 'utf8_encode(${1:data});'
+  '%encode_zlib':
+    'prefix': 'encode_zlib'
+    'body': 'zlib_encode(${1:data}${2:, ${3:encoding}${4:, ${5:${6:level}}}});'
+  '%errno_curl':
+    'prefix': 'errno_curl'
+    'body': 'curl_errno(${1:ch});'
+  '%error_bz':
+    'prefix': 'error_bz'
+    'body': 'bzerror(${1:bz});'
+  '%error_curl':
+    'prefix': 'error_curl'
+    'body': 'curl_error(${1:ch});'
+  '%error_handler_set':
+    'prefix': 'error_handler_set'
+    'body': 'set_error_handler(${1:errno}, ${2:errstr}${3:, ${4:errfile}${5:, ${6:errline}${7:, ${8:errcontext}}}});'
+  '%exception_handler_set':
+    'prefix': 'exception_handler_set'
+    'body': 'set_exception_handler(${1:exception_handler});'
+  '%exec_curl':
+    'prefix': 'exec_curl'
+    'body': 'curl_exec(${1:ch});'
+  '%exists_class':
+    'prefix': 'exists_class'
+    'body': 'class_exists(${1:${2:class_name}}${3:, ${4:${5:autoload}}});'
+  '%exists_class:false':
+    'prefix': 'exists_class:false'
+    'body': 'class_exists(${1:${2:class_name}}, false);'
+  '%exists_class:true':
+    'prefix': 'exists_class:true'
+    'body': 'class_exists(${1:${2:class_name}}, true);'
+  '%extension_funcs_get':
+    'prefix': 'extension_funcs_get'
+    'body': 'get_extension_funcs(${1:module_name});'
+  '%file_buffer_set':
+    'prefix': 'file_buffer_set'
+    'body': 'stream_set_write_buffer(${1:stream}, ${2:buffer});'
+  '%fill_array':
+    'prefix': 'fill_array'
+    'body': 'array_fill(${1:start_index}, ${2:num}, ${3:value});'
+  '%filter_array':
+    'prefix': 'filter_array'
+    'body': 'array_filter(${1:${2:array}}, \'${3:callback}\');'
+  '%flip_array':
+    'prefix': 'flip_array'
+    'body': 'array_flip(${1:array});'
+  '%flush_bz':
+    'prefix': 'flush_bz'
+    'body': 'bzflush(${1:bz});'
+  '%function_create':
+    'prefix': 'function_create'
+    'body': 'create_function(${1:${2:args}}, ${3:code});'
+  '%functions_defined_get':
+    'prefix': 'functions_defined_get'
+    'body': 'get_defined_functions();'
+  '%get_date_default_timezone':
+    'prefix': 'get_date_default_timezone'
+    'body': 'date_default_timezone_get();'
+  '%get_date_offset':
+    'prefix': 'get_date_offset'
+    'body': 'date_offset_get($1);'
+  '%get_date_timestamp':
+    'prefix': 'get_date_timestamp'
+    'body': 'date_timestamp_get();'
+  '%get_date_timezone':
+    'prefix': 'get_date_timezone'
+    'body': 'date_timezone_get($1);'
+  '%get_error_last':
+    'prefix': 'get_error_last'
+    'body': 'error_get_last();'
+  '%get_ftp':
+    'prefix': 'get_ftp'
+    'body': 'ftp_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, ${5:mode}${6:, ${7:resumepos}}});'
+  '%get_ftp:FTP_ASCII':
+    'prefix': 'get_ftp:FTP_ASCII'
+    'body': 'ftp_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, FTP_ASCII${6:, ${7:resumepos}}});'
+  '%get_ftp:FTP_BINARY':
+    'prefix': 'get_ftp:FTP_BINARY'
+    'body': 'ftp_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, FTP_BINARY${6:, ${7:resumepos}}});'
+  '%get_ftp_nb':
+    'prefix': 'get_ftp_nb'
+    'body': 'ftp_nb_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, ${5:mode}${6:, ${7:resumepos}}});'
+  '%get_ftp_nb:FTP_ASCII':
+    'prefix': 'get_ftp_nb:FTP_ASCII'
+    'body': 'ftp_nb_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, FTP_ASCII${6:, ${7:resumepos}}});'
+  '%get_ftp_nb:FTP_BINARY':
+    'prefix': 'get_ftp_nb:FTP_BINARY'
+    'body': 'ftp_nb_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, FTP_BINARY}${6:, ${7:resumepos}}});'
+  '%get_ftp_option':
+    'prefix': 'get_ftp_option'
+    'body': 'ftp_get_option(${1:ftp_stream}, ${2:option});'
+  '%get_func_arg':
+    'prefix': 'get_func_arg'
+    'body': 'func_get_arg(${1:arg_num});'
+  '%get_func_args':
+    'prefix': 'get_func_args'
+    'body': 'func_get_args();'
+  '%get_iconv_encoding':
+    'prefix': 'get_iconv_encoding'
+    'body': 'iconv_get_encoding(${1:type});'
+  '%get_iconv_encoding:all':
+    'prefix': 'get_iconv_encoding:all'
+    'body': 'iconv_get_encoding(\'all\');'
+  '%get_iconv_encoding:input_encoding':
+    'prefix': 'get_iconv_encoding:input_encoding'
+    'body': 'iconv_get_encoding(\'input_encoding\');'
+  '%get_iconv_encoding:internal_encoding':
+    'prefix': 'get_iconv_encoding:internal_encoding'
+    'body': 'iconv_get_encoding(\'internal_encoding\');'
+  '%get_iconv_encoding:output_encoding':
+    'prefix': 'get_iconv_encoding:output_encoding'
+    'body': 'iconv_get_encoding(\'output_encoding\');'
+  '%get_imap_acl':
+    'prefix': 'get_imap_acl'
+    'body': 'imap_getacl(${1:imap_stream}, ${2:mailbox});'
+  '%get_imap_mailboxes':
+    'prefix': 'get_imap_mailboxes'
+    'body': 'imap_getmailboxes(${1:imap_stream}, ${2:ref}, ${3:pattern});'
+  '%get_imap_quota':
+    'prefix': 'get_imap_quota'
+    'body': 'imap_get_quota(${1:imap_stream}, ${2:quota_root});'
+  '%get_imap_quotaroot':
+    'prefix': 'get_imap_quotaroot'
+    'body': 'imap_get_quotaroot(${1:imap_stream}, ${2:quota_root});'
+  '%get_imap_subscribed':
+    'prefix': 'get_imap_subscribed'
+    'body': 'imap_getsubscribed(${1:imap_stream}, ${2:ref}, ${3:pattern});'
+  '%get_ini':
+    'prefix': 'get_ini'
+    'body': 'ini_get(${1:$\varname});'
+  '%get_ini_all':
+    'prefix': 'get_ini_all'
+    'body': 'ini_get_all(${1:extension}${3:, ${4:details}});'
+  '%get_last_error':
+    'prefix': 'get_last_error'
+    'body': 'error_get_last();'
+  '%get_mb_info':
+    'prefix': 'get_mb_info'
+    'body': 'mb_get_info(${1:type});'
+  '%get_mb_info:all':
+    'prefix': 'get_mb_info:all'
+    'body': 'mb_get_info(\'all\');'
+  '%get_memory_peak_usage':
+    'prefix': 'get_memory_peak_usage'
+    'body': 'memory_get_peak_usage(${1:real_usage});'
+  '%get_memory_peak_usage:false':
+    'prefix': 'get_memory_peak_usage:false'
+    'body': 'memory_get_peak_usage(false);'
+  '%get_memory_peak_usage:true':
+    'prefix': 'get_memory_peak_usage:true'
+    'body': 'memory_get_peak_usage(true);'
+  '%get_memory_usage':
+    'prefix': 'get_memory_usage'
+    'body': 'memory_get_usage(${1:real_usage});'
+  '%get_memory_usage:false':
+    'prefix': 'get_memory_usage:false'
+    'body': 'memory_get_usage(false);'
+  '%get_memory_usage:true':
+    'prefix': 'get_memory_usage:true'
+    'body': 'memory_get_usage(true);'
+  '%get_mhash_block_size':
+    'prefix': 'get_mhash_block_size'
+    'body': 'mhash_get_block_size(${1:hash});'
+  '%get_mhash_hash_name':
+    'prefix': 'get_mhash_hash_name'
+    'body': 'mhash_get_hash_name(${1:hash});'
+  '%get_mysql_client_info':
+    'prefix': 'get_mysql_client_info'
+    'body': 'mysql_get_client_info();'
+  '%get_mysql_host_info':
+    'prefix': 'get_mysql_host_info'
+    'body': 'mysql_get_host_info(${1:link_identifier});'
+  '%get_mysql_proto_info':
+    'prefix': 'get_mysql_proto_info'
+    'body': 'mysql_get_proto_info(${1:link_identifier});'
+  '%get_mysql_server_info':
+    'prefix': 'get_mysql_server_info'
+    'body': 'mysql_get_server_info(${1:link_identifier});'
+  '%get_nb_ftp':
+    'prefix': 'get_nb_ftp'
+    'body': 'ftp_nb_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, ${5:mode}${6:, ${7:resumepos}}});'
+  '%get_nb_ftp:FTP_ASCII':
+    'prefix': 'get_nb_ftp:FTP_ASCII'
+    'body': 'ftp_nb_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, FTP_ASCII${6:, ${7:resumepos}}});'
+  '%get_nb_ftp:FTP_BINARY':
+    'prefix': 'get_nb_ftp:FTP_BINARY'
+    'body': 'ftp_nb_get(${1:ftp_stream}, ${2:local_file}, ${3:remote_file}${4:, FTP_BINARY}${6:, ${7:resumepos}}});'
+  '%get_ob_clean':
+    'prefix': 'get_ob_clean'
+    'body': 'ob_get_clean();'
+  '%get_ob_contents':
+    'prefix': 'get_ob_contents'
+    'body': 'ob_get_contents();'
+  '%get_ob_flush':
+    'prefix': 'get_ob_flush'
+    'body': 'ob_get_flush();'
+  '%get_ob_length':
+    'prefix': 'get_ob_length'
+    'body': 'ob_get_length();'
+  '%get_ob_level':
+    'prefix': 'get_ob_level'
+    'body': 'ob_get_level();'
+  '%get_ob_status':
+    'prefix': 'get_ob_status'
+    'body': 'ob_get_status(${1:full_status});'
+  '%get_ob_status:false':
+    'prefix': 'get_ob_status:false'
+    'body': 'ob_get_status(false);'
+  '%get_ob_status:true':
+    'prefix': 'get_ob_status:true'
+    'body': 'ob_get_status(true);'
+  '%getinfo_curl':
+    'prefix': 'getinfo_curl'
+    'body': 'curl_getinfo(${1:${2:ch}}${3:, ${4:opt}});'
+  '%getinfo_curl:CURLINFO_CONNECT_TIME':
+    'prefix': 'getinfo_curl:CURLINFO_CONNECT_TIME'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_CONNECT_TIME);'
+  '%getinfo_curl:CURLINFO_CONTENT_LENGTH_DOWNLOAD':
+    'prefix': 'getinfo_curl:CURLINFO_CONTENT_LENGTH_DOWNLOAD'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_CONTENT_LENGTH_DOWNLOAD);'
+  '%getinfo_curl:CURLINFO_CONTENT_LENGTH_UPLOAD':
+    'prefix': 'getinfo_curl:CURLINFO_CONTENT_LENGTH_UPLOAD'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_CONTENT_LENGTH_UPLOAD);'
+  '%getinfo_curl:CURLINFO_CONTENT_TYPE':
+    'prefix': 'getinfo_curl:CURLINFO_CONTENT_TYPE'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_CONTENT_TYPE);'
+  '%getinfo_curl:CURLINFO_EFFECTIVE_URL':
+    'prefix': 'getinfo_curl:CURLINFO_EFFECTIVE_URL'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_EFFECTIVE_URL);'
+  '%getinfo_curl:CURLINFO_FILETIME':
+    'prefix': 'getinfo_curl:CURLINFO_FILETIME'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_FILETIME);'
+  '%getinfo_curl:CURLINFO_HEADER_OUT':
+    'prefix': 'getinfo_curl:CURLINFO_HEADER_OUT'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_HEADER_OUT);'
+  '%getinfo_curl:CURLINFO_HEADER_SIZE':
+    'prefix': 'getinfo_curl:CURLINFO_HEADER_SIZE'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_HEADER_SIZE);'
+  '%getinfo_curl:CURLINFO_HTTP_CODE':
+    'prefix': 'getinfo_curl:CURLINFO_HTTP_CODE'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_HTTP_CODE);'
+  '%getinfo_curl:CURLINFO_NAMELOOKUP_TIME':
+    'prefix': 'getinfo_curl:CURLINFO_NAMELOOKUP_TIME'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_NAMELOOKUP_TIME);'
+  '%getinfo_curl:CURLINFO_PRETRANSFER_TIME':
+    'prefix': 'getinfo_curl:CURLINFO_PRETRANSFER_TIME'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_PRETRANSFER_TIME);'
+  '%getinfo_curl:CURLINFO_REDIRECT_COUNT':
+    'prefix': 'getinfo_curl:CURLINFO_REDIRECT_COUNT'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_REDIRECT_COUNT);'
+  '%getinfo_curl:CURLINFO_REDIRECT_TIME':
+    'prefix': 'getinfo_curl:CURLINFO_REDIRECT_TIME'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_REDIRECT_TIME);'
+  '%getinfo_curl:CURLINFO_REQUEST_SIZE':
+    'prefix': 'getinfo_curl:CURLINFO_REQUEST_SIZE'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_REQUEST_SIZE);'
+  '%getinfo_curl:CURLINFO_SIZE_DOWNLOAD':
+    'prefix': 'getinfo_curl:CURLINFO_SIZE_DOWNLOAD'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_SIZE_DOWNLOAD);'
+  '%getinfo_curl:CURLINFO_SIZE_UPLOAD':
+    'prefix': 'getinfo_curl:CURLINFO_SIZE_UPLOAD'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_SIZE_UPLOAD);'
+  '%getinfo_curl:CURLINFO_SPEED_UPLOAD':
+    'prefix': 'getinfo_curl:CURLINFO_SPEED_UPLOAD'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_SPEED_UPLOAD);'
+  '%getinfo_curl:CURLINFO_SSL_VERIFYRESULT':
+    'prefix': 'getinfo_curl:CURLINFO_SSL_VERIFYRESULT'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_SSL_VERIFYRESULT);'
+  '%getinfo_curl:CURLINFO_STARTTRANSFER_TIME':
+    'prefix': 'getinfo_curl:CURLINFO_STARTTRANSFER_TIME'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_STARTTRANSFER_TIME);'
+  '%getinfo_curl:CURLINFO_TOTAL_TIME':
+    'prefix': 'getinfo_curl:CURLINFO_TOTAL_TIME'
+    'body': 'curl_getinfo(${1:${2:ch}}, CURLINFO_TOTAL_TIME);'
+  '%graph_ctype':
+    'prefix': 'graph_ctype'
+    'body': 'ctype_graph(${1:text});'
+  '%headers_get':
+    'prefix': 'headers_get'
+    'body': 'get_headers(${1:url}${2:, ${3:format}});'
+  '%implements_class':
+    'prefix': 'implements_class'
+    'body': 'class_implements(${1:${2:class}}${3:, ${4:autoload}});'
+  '%implements_class:false':
+    'prefix': 'implements_class:false'
+    'body': 'class_implements(${1:class}, false);'
+  '%implements_class:true':
+    'prefix': 'implements_class:true'
+    'body': 'class_implements(${1:class}, true);'
+  '%include_path_set':
+    'prefix': 'include_path_set'
+    'body': 'set_include_path(${1:new_include_path});'
+  '%init_curl':
+    'prefix': 'init_curl'
+    'body': 'curl_init(${1:url});'
+  '%interfaces_declared_get':
+    'prefix': 'interfaces_declared_get'
+    'body': 'get_declared_interfaces();'
+  '%intersect_array':
+    'prefix': 'intersect_array'
+    'body': 'array_intersect(${1:${2:array1}}, ${3:array2});'
+  '%keys_array':
+    'prefix': 'keys_array'
+    'body': 'array_keys(${1:${2:array}}, ${3:search_value}${4:, strict});'
+  '%locale_set':
+    'prefix': 'locale_set'
+    'body': 'setlocale(${1:category}, ${2:locale});'
+  '%locale_set:LC_ALL':
+    'prefix': 'locale_set:LC_ALL'
+    'body': 'setlocale(LC_ALL, ${1:locale});'
+  '%locale_set:LC_COLLATE':
+    'prefix': 'locale_set:LC_COLLATE'
+    'body': 'setlocale(LC_COLLATE, ${1:locale});'
+  '%locale_set:LC_CTYPE':
+    'prefix': 'locale_set:LC_CTYPE'
+    'body': 'setlocale(LC_CTYPE, ${1:locale});'
+  '%locale_set:LC_MESSAGES':
+    'prefix': 'locale_set:LC_MESSAGES'
+    'body': 'setlocale(LC_MESSAGES, ${1:locale});'
+  '%locale_set:LC_MONETARY':
+    'prefix': 'locale_set:LC_MONETARY'
+    'body': 'setlocale(LC_MONETARY, ${1:locale});'
+  '%locale_set:LC_NUMERIC':
+    'prefix': 'locale_set:LC_NUMERIC'
+    'body': 'setlocale(LC_NUMERIC, ${1:locale});'
+  '%locale_set:LC_TIME':
+    'prefix': 'locale_set:LC_TIME'
+    'body': 'setlocale(LC_TIME, ${1:locale});'
+  '%logclose':
+    'prefix': 'logclose'
+    'body': 'closelog(${1});'
+  '%lower_ctype':
+    'prefix': 'lower_ctype'
+    'body': 'ctype_lower(${1:text});'
+  '%magic_quotes_runtime_set':
+    'prefix': 'magic_quotes_runtime_set'
+    'body': 'set_magic_quotes_runtime(${1:new_setting});'
+  '%magic_quotes_runtime_set:false':
+    'prefix': 'magic_quotes_runtime_set:false'
+    'body': 'set_magic_quotes_runtime(false);'
+  '%magic_quotes_runtime_set:true':
+    'prefix': 'magic_quotes_runtime_set:true'
+    'body': 'set_magic_quotes_runtime(true);'
+  '%map_array':
+    'prefix': 'map_array'
+    'body': 'array_map(\'${1:callback}\', ${2:${3:array}});'
+  '%merge_array':
+    'prefix': 'merge_array'
+    'body': 'array_merge(${1:${2:array1}}${3:, ${4:array2}});'
+  '%merge_array:3':
+    'prefix': 'merge_array:3'
+    'body': 'array_merge(${1:${2:array1}}, ${3:array2}, ${4:array3});'
+  '%merge_array:4':
+    'prefix': 'merge_array:4'
+    'body': 'array_merge(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4});'
+  '%merge_array:5':
+    'prefix': 'merge_array:5'
+    'body': 'array_merge(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4}, ${6:array5});'
+  '%mod_bc':
+    'prefix': 'mod_bc'
+    'body': 'bcmod(${1:${2:left_operand}}, ${3:modulus});'
+  '%mul_bc':
+    'prefix': 'mul_bc'
+    'body': 'bcmul(${1:${2:left_operand}}, ${3:right_operand}${4:, ${5:scale}});'
+  '%multisort_array':
+    'prefix': 'multisort_array'
+    'body': 'array_multisort(${1:${2:array}}${3:, ${4:array_sort_order}}${5:, ${6:array_sort_flags}});'
+  '%multisort_array:SORT_DESC:SORT_FLAG_CASE':
+    'prefix': 'multisort_array:SORT_DESC:SORT_FLAG_CASE'
+    'body': 'array_multisort(${1:${2:array}}, SORT_DESC, SORT_FLAG_CASE);'
+  '%multisort_array:SORT_DESC:SORT_NATURAL':
+    'prefix': 'multisort_array:SORT_DESC:SORT_NATURAL'
+    'body': 'array_multisort(${1:${2:array}}, SORT_DESC, SORT_NATURAL);'
+  '%multisort_array:SORT_DESC:SORT_NUMERIC':
+    'prefix': 'multisort_array:SORT_DESC:SORT_NUMERIC'
+    'body': 'array_multisort(${1:${2:array}}, SORT_DESC, SORT_NUMERIC);'
+  '%multisort_array:SORT_DESC:SORT_REGULAR':
+    'prefix': 'multisort_array:SORT_DESC:SORT_REGULAR'
+    'body': 'array_multisort(${1:${2:array}}, SORT_DESC, SORT_REGULAR);'
+  '%multisort_array:SORT_DESC:SORT_STRING':
+    'prefix': 'multisort_array:SORT_DESC:SORT_STRING'
+    'body': 'array_multisort(${1:${2:array}}, SORT_DESC, SORT_STRING);'
+  '%multisort_array:SORT_FLAG_CASE':
+    'prefix': 'multisort_array:SORT_FLAG_CASE'
+    'body': 'array_multisort(${1:${2:array}}${3:, ${4:array_sort_order}}, SORT_FLAG_CASE);'
+  '%multisort_array:SORT_LOCALE_STRING':
+    'prefix': 'multisort_array:SORT_LOCALE_STRING'
+    'body': 'array_multisort(${1:${2:array}}${3:, ${4:array_sort_order}}, SORT_LOCALE_STRING);'
+  '%multisort_array:SORT_NATURAL':
+    'prefix': 'multisort_array:SORT_NATURAL'
+    'body': 'array_multisort(${1:${2:array}}${3:, ${4:array_sort_order}}, SORT_NATURAL);'
+  '%multisort_array:SORT_NUMERIC':
+    'prefix': 'multisort_array:SORT_NUMERIC'
+    'body': 'array_multisort(${1:${2:array}}${3:, ${4:array_sort_order}}, SORT_NUMERIC);'
+  '%multisort_array:SORT_REGULAR':
+    'prefix': 'multisort_array:SORT_REGULAR'
+    'body': 'array_multisort(${1:${2:array}}${3:, ${4:array_sort_order}}, SORT_REGULAR);'
+  '%multisort_array:SORT_STRING':
+    'prefix': 'multisort_array:SORT_STRING'
+    'body': 'array_multisort(${1:${2:array}}${3:, ${4:array_sort_order}}, SORT_STRING);'
+  '%object_vars_get':
+    'prefix': 'object_vars_get'
+    'body': 'get_object_vars(${1:object});'
+  '%open_bz':
+    'prefix': 'open_bz'
+    'body': 'bzopen(${1:${2:filename}}, ${3:mode});'
+  '%pad_array':
+    'prefix': 'pad_array'
+    'body': 'array_pad(${1:${2:array}}, ${3:size}, ${4:value});'
+  '%parents_class':
+    'prefix': 'parents_class'
+    'body': 'class_parents(${1:${{2:class}}${3:, ${4:autoload}});'
+  '%parents_class:false':
+    'prefix': 'parents_class:false'
+    'body': 'class_parents(${1:${2:class}}, false);'
+  '%parents_class:true':
+    'prefix': 'parents_class:true'
+    'body': 'class_parents(${1:${2:class}}, true);'
+  '%pop_array':
+    'prefix': 'pop_array'
+    'body': 'array_pop(${1:array});'
+  '%pow_bc':
+    'prefix': 'pow_bc'
+    'body': 'bcpow(${1:${2:left_operand}}, ${3:right_operand}${4:, ${5:scale}});'
+  '%powmod_bc':
+    'prefix': 'powmod_bc'
+    'body': 'bcpowmod(${1:${2:left_operand}}, ${3:right_operand}, ${4:modulus}${5:, ${6:scale}});'
+  '%print_ctype':
+    'prefix': 'print_ctype'
+    'body': 'ctype_print(${1:text});'
+  '%product_array':
+    'prefix': 'product_array'
+    'body': 'array_product(${1:array});'
+  '%punct_ctype':
+    'prefix': 'punct_ctype'
+    'body': 'ctype_punct(${1:text});'
+  '%push_array':
+    'prefix': 'push_array'
+    'body': 'array_push(${1:${2:array}}, \'${3:value}\');'
+  '%rand_array':
+    'prefix': 'rand_array'
+    'body': 'array_rand(${1:${2:array}}, ${3:num});'
+  '%raw_cookie_set':
+    'prefix': 'raw_cookie_set'
+    'body': 'setrawcookie(${1:name}${2:, ${3:value}${4:, ${5:expire}${6:, ${7:path}${8:, ${9:domain}${10:, ${11:secure}${12:, ${13:httponly}}}}}}});'
+  '%rawcookie_set':
+    'prefix': 'rawcookie_set'
+    'body': 'setrawcookie(${1:name}${2:, ${3:value}${4:, ${5:expire}${6:, ${7:path}${8:, ${9:domain}${10:, ${11:secure}${12:, ${13:httponly}}}}}}});'
+  '%read_bz':
+    'prefix': 'read_bz'
+    'body': 'bzread(${1:${2:bz}}${3:, ${4:length}});'
+  '%reduce_array':
+    'prefix': 'reduce_array'
+    'body': 'array_reduce(${1:${2:array}}, \'${3:callback}\'${4:, ${5:initial}});'
+  '%replace_array':
+    'prefix': 'replace_array'
+    'body': 'array_replace(${1:${2:array1}}, ${3:array2});'
+  '%replace_array:3':
+    'prefix': 'replace_array:3'
+    'body': 'array_replace(${1:${2:array1}}, ${3:array2}, ${4:array3});'
+  '%replace_array:4':
+    'prefix': 'replace_array:4'
+    'body': 'array_replace(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4});'
+  '%replace_array:5':
+    'prefix': 'replace_array:5'
+    'body': 'array_replace(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4}, ${6:array5});'
+  '%reverse_array':
+    'prefix': 'reverse_array'
+    'body': 'array_reverse(${1:${2:array}}${3:, ${4:preserve_keys}});'
+  '%reverse_array:preserve_keys':
+    'prefix': 'reverse_array:preserve_keys'
+    'body': 'array_reverse(${1:${2:array}}, true);'
+  '%scale_bc':
+    'prefix': 'scale_bc'
+    'body': 'bcscale(${1:scale});'
+  '%search_array':
+    'prefix': 'search_array'
+    'body': 'array_search(\'${1:needle}\', ${2:${3:haystack}}${4:, ${5:strict}});'
+  '%search_array:strict':
+    'prefix': 'search_array:strict'
+    'body': 'array_search(\'${1:needle}\', ${2:${3:haystack}}, true);'
+  '%set_date_time':
+    'prefix': 'set_date_time'
+    'body': 'date_time_set(${1:object}, ${2:hour}, ${3:minute}${4:, ${5:second}});'
+  '%set_date_timestamp':
+    'prefix': 'set_date_timestamp'
+    'body': 'date_timestamp_set(${1:object}, ${2:timestamp});'
+  '%set_file_buffer':
+    'prefix': 'set_file_buffer'
+    'body': 'stream_set_write_buffer(${1:stream}, ${2:buffer});'
+  '%set_finfo_flags':
+    'prefix': 'set_finfo_flags'
+    'body': 'finfo_set_flags(${1:finfo}, ${2:options});'
+  '%set_ftp_option':
+    'prefix': 'set_ftp_option'
+    'body': 'ftp_set_option(${1:ftp_stream}, ${2:option}, ${3:value});'
+  '%set_ftp_option:FTP_AUTOSEEK':
+    'prefix': 'set_ftp_option:FTP_AUTOSEEK'
+    'body': 'ftp_set_option(${1:ftp_stream}, FTP_AUTOSEEK, ${2:value});'
+  '%set_ftp_option:FTP_TIMEOUT_SEC':
+    'prefix': 'set_ftp_option:FTP_TIMEOUT_SEC'
+    'body': 'ftp_set_option(${1:ftp_stream}, FTP_TIMEOUT_SEC, ${2:value});'
+  '%set_iconv_encoding':
+    'prefix': 'set_iconv_encoding'
+    'body': 'iconv_set_encoding(${1:type}, ${2:charset});'
+  '%set_imap_acl':
+    'prefix': 'set_imap_acl'
+    'body': 'imap_setacl(${1:imap_stream}, ${2:mailbox}, ${3:id}, ${4:rights});'
+  '%set_imap_flag_full':
+    'prefix': 'set_imap_flag_full'
+    'body': 'imap_setflag_full(${1:imap_stream}, ${2:sequence}, ${3:flag}${4:, ${5:options}});'
+  '%set_imap_quota':
+    'prefix': 'set_imap_quota'
+    'body': 'imap_set_quota(${1:imap_stream}, ${2:quota_root}, ${3:quota_limit});'
+  '%set_ini':
+    'prefix': 'set_ini'
+    'body': 'ini_set(${1:varname}, ${2:newvalue});'
+  '%set_mysql_charset':
+    'prefix': 'set_mysql_charset'
+    'body': 'mysql_set_charset(${1:charset}${2:, ${3:link_identifier}});'
+  '%set_mysqli_opt':
+    'prefix': 'set_mysqli_opt'
+    'body': 'mysqli_options(${1:link}, ${2:option}, ${3:value});'
+  '%set_mysqli_opt:MYSQLI_INIT_COMMAND':
+    'prefix': 'set_mysqli_opt:MYSQLI_INIT_COMMAND'
+    'body': 'mysqli_options(${1:link}, MYSQLI_INIT_COMMAND, ${2:value});'
+  '%set_mysqli_opt:MYSQLI_OPT_CONNECT_TIMEOUT':
+    'prefix': 'set_mysqli_opt:MYSQLI_OPT_CONNECT_TIMEOUT'
+    'body': 'mysqli_options(${1:link}, MYSQLI_OPT_CONNECT_TIMEOUT, ${2:value});'
+  '%set_mysqli_opt:MYSQLI_OPT_LOCAL_INFILE':
+    'prefix': 'set_mysqli_opt:MYSQLI_OPT_LOCAL_INFILE'
+    'body': 'mysqli_options(${1:link}, MYSQLI_OPT_LOCAL_INFILE, ${2:value});'
+  '%set_mysqli_opt:MYSQLI_READ_DEFAULT_FILE':
+    'prefix': 'set_mysqli_opt:MYSQLI_READ_DEFAULT_FILE'
+    'body': 'mysqli_options(${1:link}, MYSQLI_READ_DEFAULT_FILE, ${2:value});'
+  '%set_mysqli_opt:MYSQLI_READ_DEFAULT_GROUP':
+    'prefix': 'set_mysqli_opt:MYSQLI_READ_DEFAULT_GROUP'
+    'body': 'mysqli_options(${1:link}, MYSQLI_READ_DEFAULT_GROUP, ${2:value});'
+  '%set_mysqli_opt:MYSQLI_SERVER_PUBLIC_KEY':
+    'prefix': 'set_mysqli_opt:MYSQLI_SERVER_PUBLIC_KEY'
+    'body': 'mysqli_options(${1:link}, MYSQLI_SERVER_PUBLIC_KEY, ${2:value});'
+  '%set_session_cookie_params':
+    'prefix': 'set_session_cookie_params'
+    'body': 'session_set_cookie_params(${1:lifetime}${2:, ${3:path}${4:, ${5:domain}${6:, ${7:secure}${8:, ${9:httponly}}}}});'
+  '%set_session_save_handler':
+    'prefix': 'set_session_save_handler'
+    'body': 'session_set_save_handler(${1:sessionhandler}${2:, ${3:register_shutdown}});'
+  '%set_session_save_handler:false':
+    'prefix': 'set_session_save_handler:false'
+    'body': 'session_set_save_handler(${1:sessionhandler}, false);'
+  '%set_session_save_handler:true':
+    'prefix': 'set_session_save_handler:true'
+    'body': 'session_set_save_handler(${1:sessionhandler}, true);'
+  '%set_socket_blocking':
+    'prefix': 'set_socket_blocking'
+    'body': 'stream_set_blocking(${1:stream}, ${2:mode});'
+  '%set_socket_timeout':
+    'prefix': 'set_socket_timeout'
+    'body': 'stream_set_timeout(${1:stream}, ${2:seconds}${3:, ${4:microseconds}});'
+  '%set_stream_blocking':
+    'prefix': 'set_stream_blocking'
+    'body': 'stream_set_blocking(${1:stream}, ${2:mode});'
+  '%set_stream_timeout':
+    'prefix': 'set_stream_timeout'
+    'body': 'stream_set_timeout(${1:stream}, ${2:seconds}${3:, ${4:microseconds}});'
+  '%set_stream_write_buffer':
+    'prefix': 'set_stream_write_buffer'
+    'body': 'stream_set_write_buffer(${1:stream}, ${2:buffer});'
+  '%shift_array':
+    'prefix': 'shift_array'
+    'body': 'array_shift(${1:array});'
+  '%slice_array':
+    'prefix': 'slice_array'
+    'body': 'array_slice(${1:${2:array}}, ${3:offset}${4:, ${5:length}}${6:, ${7:preserve_keys}});'
+  '%slice_array:preserve_keys':
+    'prefix': 'slice_array:preserve_keys'
+    'body': 'array_slice(${1:${2:array}}, ${3:offset}${4:, ${5:length}}, true);'
+  '%socket_blocking_set':
+    'prefix': 'socket_blocking_set'
+    'body': 'stream_set_blocking(${1:stream}, ${2:mode});'
+  '%socket_set_blocking':
+    'prefix': 'socket_set_blocking'
+    'body': 'stream_set_blocking(${1:stream}, ${2:mode});'
+  '%socket_set_timeout':
+    'prefix': 'socket_set_timeout'
+    'body': 'stream_set_timeout(${1:stream}, ${2:seconds}${3:, ${4:microseconds}});'
+  '%space_ctype':
+    'prefix': 'space_ctype'
+    'body': 'ctype_space(${1:text});'
+  '%splice_array':
+    'prefix': 'splice_array'
+    'body': 'array_splice(${1:${2:input}}, ${3:offset}${4:, ${5:length}}${6:, ${7:replacement}});'
+  '%split_chunk':
+    'prefix': 'split_chunk'
+    'body': 'chunk_split(${1:${2:body}}${3:, ${4:chunklen}${5:, ${6:end}}});'
+  '%sqrt_bc':
+    'prefix': 'sqrt_bc'
+    'body': 'bcsqrt(${1:${2:operand}}${3:, ${4:scale}});'
+  '%status_connection':
+    'prefix': 'status_connection'
+    'body': 'connection_status(${1});'
+  '%stream_blocking_set':
+    'prefix': 'stream_blocking_set'
+    'body': 'stream_set_blocking(${1:stream}, ${2:mode});'
+  '%stream_set_timeout':
+    'prefix': 'stream_set_timeout'
+    'body': 'stream_set_timeout(${1:stream}, ${2:seconds}${3:, ${4:microseconds}});'
+  '%sub_bc':
+    'prefix': 'sub_bc'
+    'body': 'bcsub(${1:${2:left_operand}}, ${3:right_operand}${4:, ${5:scale}});'
+  '%sum_array':
+    'prefix': 'sum_array'
+    'body': 'array_sum(${1:array});'
+  '%time_limit_set':
+    'prefix': 'time_limit_set'
+    'body': 'set_time_limit(${1:seconds});'
+  '%traits_declared_get':
+    'prefix': 'traits_declared_get'
+    'body': 'get_declared_traits();'
+  '%type_set':
+    'prefix': 'type_set'
+    'body': 'settype(${1:var}, ${2:type});'
+  '%type_set:array':
+    'prefix': 'type_set:array'
+    'body': 'settype(${1:var}, "array");'
+  '%type_set:boolean':
+    'prefix': 'type_set:boolean'
+    'body': 'settype(${1:var}, "boolean");'
+  '%type_set:float':
+    'prefix': 'type_set:float'
+    'body': 'settype(${1:var}, "float");'
+  '%type_set:integer':
+    'prefix': 'type_set:integer'
+    'body': 'settype(${1:var}, "integer");'
+  '%type_set:null':
+    'prefix': 'type_set:null'
+    'body': 'settype(${1:var}, "null");'
+  '%type_set:object':
+    'prefix': 'type_set:object'
+    'body': 'settype(${1:var}, "object");'
+  '%type_set:string':
+    'prefix': 'type_set:string'
+    'body': 'settype(${1:var}, "string");'
+  '%udiff_array':
+    'prefix': 'udiff_array'
+    'body': 'array_udiff(${1:${2:array1}}, ${3:array2}, \'${4:value_compare_func}\');'
+  '%udiff_array:3':
+    'prefix': 'udiff_array:3'
+    'body': 'array_udiff(${1:${2:array1}}, ${3:array2}, ${4:array3}, \'${5:value_compare_func}\');'
+  '%udiff_array:4':
+    'prefix': 'udiff_array:4'
+    'body': 'array_udiff(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4}, \'${6:value_compare_func}\');'
+  '%udiff_array:5':
+    'prefix': 'udiff_array:5'
+    'body': 'array_udiff(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4}, ${6:array5}, \'${7:value_compare_func}\');'
+  '%uintersect_array':
+    'prefix': 'uintersect_array'
+    'body': 'array_uintersect(${1:${2:array1}}, ${3:array2}, \'${4:value_compare_func}\');'
+  '%uintersect_array:3':
+    'prefix': 'uintersect_array:3'
+    'body': 'array_uintersect(${1:${2:array1}}, ${3:array2}, ${4:array3}, \'${5:value_compare_func}\');'
+  '%uintersect_array:4':
+    'prefix': 'uintersect_array:4'
+    'body': 'array_uintersect(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4}, \'${6:value_compare_func}\');'
+  '%uintersect_array:5':
+    'prefix': 'uintersect_array:5'
+    'body': 'array_uintersect(${1:${2:array1}}, ${3:array2}, ${4:array3}, ${5:array4}, ${6:array5}, \'${7:value_compare_func}\');'
+  '%unique_array':
+    'prefix': 'unique_array'
+    'body': 'array_unique(${1:${2:array}}${3:, ${4:sort_flags}});'
+  '%unique_array:SORT_LOCALE_STRING':
+    'prefix': 'unique_array:SORT_LOCALE_STRING'
+    'body': 'array_unique(${1:${2:array}}, SORT_LOCALE_STRING);'
+  '%unique_array:SORT_NUMERIC':
+    'prefix': 'unique_array:SORT_NUMERIC'
+    'body': 'array_unique(${1:${2:array}}, SORT_NUMERIC);'
+  '%unique_array:SORT_REGULAR':
+    'prefix': 'unique_array:SORT_REGULAR'
+    'body': 'array_unique(${1:${2:array}}, SORT_REGULAR);'
+  '%unique_array:SORT_STRING':
+    'prefix': 'unique_array:SORT_STRING'
+    'body': 'array_unique(${1:${2:array}}, SORT_STRING);'
+  '%unshift_array':
+    'prefix': 'unshift_array'
+    'body': 'array_unshift(${1:${2:array}}, \'${2:value}\');'
+  '%upper_ctype':
+    'prefix': 'upper_ctype'
+    'body': 'ctype_upper(${1:text});'
+  '%user_current_get':
+    'prefix': 'user_current_get'
+    'body': 'get_current_user();'
+  '%uses_class':
+    'prefix': 'uses_class'
+    'body': 'class_uses(${1:${2:class}}${3:, ${4:autoload}});'
+  '%uses_class:false':
+    'prefix': 'uses_class:false'
+    'body': 'class_uses(${1:${2:class}}, false);'
+  '%uses_class:true':
+    'prefix': 'uses_class:true'
+    'body': 'class_uses(${1:${2:class}}, true);'
+  '%vars_defined_get':
+    'prefix': 'vars_defined_get'
+    'body': 'get_defined_vars();'
+  '%version_curl':
+    'prefix': 'version_curl'
+    'body': 'curl_version(${1});'
+  '%version_pg':
+    'prefix': 'version_pg'
+    'body': 'pg_version(${1:connection});'
+  '%version_php':
+    'prefix': 'version_php'
+    'body': 'phpversion(${1:extension});'
+  '%version_zend':
+    'prefix': 'version_zend'
+    'body': 'zend_version();'
+  '%walk_array':
+    'prefix': 'walk_array'
+    'body': 'array_walk(${1:${2:array}}, \'${2:callback}\'${3:, \'${4:userdata}\'});'
+  '%write_bz':
+    'prefix': 'write_bz'
+    'body': 'bzwrite(${1:${2:bz}}, ${3:data}${4:, ${5:${6:length}}});'
+  '%xdigit_ctype':
+    'prefix': 'xdigit_ctype'
+    'body': 'ctype_xdigit(${1:text});'
