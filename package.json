@@ -1,6 +1,6 @@
 {
   "name": "drunken-php",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Atom snippets for PHP, right kinda wrong",
   "repository": {
     "type": "git",
