@@ -19,7 +19,7 @@ PHP is [often](http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/
 ### GitHub
 
 1. Change directory to `~/.atom/packages/`
-2. Clone repository `git clone https://github.com/idleberg/atom-drunken-php.git`
+2. Clone repository `git clone https://github.com/idleberg/atom-drunken-php drunken-php`
 
 ## Usage
 
