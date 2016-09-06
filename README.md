@@ -4,7 +4,7 @@
 [![apm](https://img.shields.io/apm/v/drunken-php.svg?style=flat-square)](https://atom.io/packages/drunken-php)
 [![apm](https://img.shields.io/apm/dm/drunken-php.svg?style=flat-square)](https://atom.io/packages/drunken-php)
 [![Travis](https://img.shields.io/travis/idleberg/atom-drunken-php.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-drunken-php)
-[![David](https://img.shields.io/david/dev/idleberg/atom-drunken-php.svg?style=flat-square)](https://david-dm.org/idleberg/atom-drunken-php#info=devDependencies)
+[![David](https://img.shields.io/david/dev/idleberg/atom-drunken-php.svg?style=flat-square)](https://david-dm.org/idleberg/atom-drunken-php?type=dev)
 
 ## Description
 
