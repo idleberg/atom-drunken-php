@@ -201,7 +201,7 @@ babel-code-frame@^6.16.0, babel-code-frame@^6.20.0:
     esutils "^2.0.2"
     js-tokens "^2.0.0"
 
-babel-eslint@^7.0.0:
+babel-eslint@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-7.1.1.tgz#8a6a884f085aa7060af69cfc77341c2f99370fb2"
   dependencies:
@@ -524,6 +524,10 @@ dateformat@^1.0.11:
     get-stdin "^4.0.1"
     meow "^3.3.0"
 
+dateformat@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-2.0.0.tgz#2743e3abb5c3fc2462e527dca445e04e9f4dee17"
+
 debug@^2.1.1, debug@^2.2.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.0.tgz#bc596bcabe7617f11d9fa15361eded5608b8499b"
@@ -729,7 +733,7 @@ eslint-config-atom-build@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-atom-build/-/eslint-config-atom-build-3.0.0.tgz#fc3a24da24c8f70cf7aeab73793b0ada5eef61fd"
 
-eslint@^3.7.1:
+eslint@^3.13.1:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.13.1.tgz#564d2646b5efded85df96985332edd91a23bff25"
   dependencies:
@@ -1195,7 +1199,7 @@ gulp-debug@^3.0.0:
     through2 "^2.0.0"
     tildify "^1.1.2"
 
-gulp-jshint@^2.0.1:
+gulp-jshint@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/gulp-jshint/-/gulp-jshint-2.0.4.tgz#f382b18564b1072def0c9aaf753c146dadb4f0e8"
   dependencies:
@@ -1205,7 +1209,7 @@ gulp-jshint@^2.0.1:
     rcloader "^0.2.2"
     through2 "^2.0.0"
 
-gulp-jsonlint@^1.1.2:
+gulp-jsonlint@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/gulp-jsonlint/-/gulp-jsonlint-1.2.0.tgz#b9dd52daffd0f5426d16f657dedcfe9d86851ad9"
   dependencies:
@@ -1214,7 +1218,7 @@ gulp-jsonlint@^1.1.2:
     map-stream "^0.1.0"
     through2 "2.0.3"
 
-gulp-lesshint@^2.0.0:
+gulp-lesshint@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/gulp-lesshint/-/gulp-lesshint-2.1.0.tgz#175f983a6fd4fb999863620a5526a1c60444f14a"
   dependencies:
@@ -1233,7 +1237,7 @@ gulp-sourcemaps@1.6.0:
     through2 "^2.0.0"
     vinyl "^1.0.0"
 
-gulp-util@3.0.7, gulp-util@^3.0.0:
+gulp-util@3.0.7:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.7.tgz#78925c4b8f8b49005ac01a011c557e6218941cbb"
   dependencies:
@@ -1242,6 +1246,29 @@ gulp-util@3.0.7, gulp-util@^3.0.0:
     beeper "^1.0.0"
     chalk "^1.0.0"
     dateformat "^1.0.11"
+    fancy-log "^1.1.0"
+    gulplog "^1.0.0"
+    has-gulplog "^0.1.0"
+    lodash._reescape "^3.0.0"
+    lodash._reevaluate "^3.0.0"
+    lodash._reinterpolate "^3.0.0"
+    lodash.template "^3.0.0"
+    minimist "^1.1.0"
+    multipipe "^0.1.2"
+    object-assign "^3.0.0"
+    replace-ext "0.0.1"
+    through2 "^2.0.0"
+    vinyl "^0.5.0"
+
+gulp-util@^3.0.0:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
+  dependencies:
+    array-differ "^1.0.0"
+    array-uniq "^1.0.2"
+    beeper "^1.0.0"
+    chalk "^1.0.0"
+    dateformat "^2.0.0"
     fancy-log "^1.1.0"
     gulplog "^1.0.0"
     has-gulplog "^0.1.0"
@@ -1631,7 +1658,7 @@ jsbn@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.0.tgz#650987da0dd74f4ebf5a11377a2aa2d273e97dfd"
 
-jshint@^2.9.3:
+jshint@^2.9.4:
   version "2.9.4"
   resolved "https://registry.yarnpkg.com/jshint/-/jshint-2.9.4.tgz#5e3ba97848d5290273db514aee47fe24cf592934"
   dependencies:
