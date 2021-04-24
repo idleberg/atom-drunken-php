@@ -1,10 +1,9 @@
 # Drunken PHP for Atom
 
-[![apm](https://img.shields.io/apm/l/drunken-php.svg?style=flat-square)](https://atom.io/packages/drunken-php)
-[![apm](https://img.shields.io/apm/v/drunken-php.svg?style=flat-square)](https://atom.io/packages/drunken-php)
-[![apm](https://img.shields.io/apm/dm/drunken-php.svg?style=flat-square)](https://atom.io/packages/drunken-php)
-[![Travis](https://img.shields.io/travis/idleberg/atom-drunken-php.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-drunken-php)
-[![David](https://img.shields.io/david/dev/idleberg/atom-drunken-php.svg?style=flat-square)](https://david-dm.org/idleberg/atom-drunken-php?type=dev)
+[![apm](https://flat.badgen.net/apm/license/drunken-php)](https://atom.io/packages/drunken-php)
+[![apm](https://flat.badgen.net/apm/v/drunken-php)](https://atom.io/packages/drunken-php)
+[![apm](https://flat.badgen.net/apm/dl/drunken-php)](https://atom.io/packages/drunken-php)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-drunken-php)](https://circleci.com/gh/idleberg/atom-drunken-php)
 
 ## Description
 

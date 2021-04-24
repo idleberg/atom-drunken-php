@@ -1,0 +1,576 @@
+{
+  ".source.php": {
+    "%add_cslashes": {
+      "body": "addcslashes(${1:str}, ${2:charlist});",
+      "prefix": "add_cslashes"
+    },
+    "%add_slashes": {
+      "body": "addslashes(${1:str});",
+      "prefix": "add_slashes"
+    },
+    "%base64decode": {
+      "body": "base64_decode(${1:data}${2:, ${3:strict}});",
+      "prefix": "base64decode"
+    },
+    "%base64decode:strict": {
+      "body": "base64_decode(${1:data}, true);",
+      "prefix": "base64decode:strict"
+    },
+    "%base64encode": {
+      "body": "base64_encode(${1:data});",
+      "prefix": "base64encode"
+    },
+    "%base_name": {
+      "body": "basename(${1:path}${2:, ${3:suffix}});",
+      "prefix": "base_name"
+    },
+    "%bc_add": {
+      "body": "bcadd(${1:left_operand}, ${2:right_operand}${3:, ${4:scale}});",
+      "prefix": "bc_add"
+    },
+    "%bc_comp": {
+      "body": "bccomp(${1:left_operand}, ${2:right_operand}${3:, ${4:scale}});",
+      "prefix": "bc_comp"
+    },
+    "%bc_div": {
+      "body": "bcdiv(${1:left_operand}, ${2:right_operand}${3:, ${4:scale}});",
+      "prefix": "bc_div"
+    },
+    "%bc_mod": {
+      "body": "bcmod(${1:left_operand}, ${3:modulus});",
+      "prefix": "bc_mod"
+    },
+    "%bc_mul": {
+      "body": "bcmul(${1:left_operand}, ${2:right_operand}${3:, ${4:scale}});",
+      "prefix": "bc_mul"
+    },
+    "%bc_pow": {
+      "body": "bcpow(${1:left_operand}, ${2:right_operand}${3:, ${4:scale}});",
+      "prefix": "bc_pow"
+    },
+    "%bc_powmod": {
+      "body": "bcpowmod(${1:left_operand}, ${3:right_operand}, ${4:modulus}${5:, ${6:scale}});",
+      "prefix": "bc_powmod"
+    },
+    "%bc_scale": {
+      "body": "bcscale(${1:scale});",
+      "prefix": "bc_scale"
+    },
+    "%bc_sqrt": {
+      "body": "bcsqrt(${1:operand}${2:, ${3:scale}});",
+      "prefix": "bc_sqrt"
+    },
+    "%bc_sub": {
+      "body": "bcsub(${1:left_operand}, ${2:right_operand}${3:, ${4:scale}});",
+      "prefix": "bc_sub"
+    },
+    "%bin_dec": {
+      "body": "bindec(${1:binary_string});",
+      "prefix": "bin_dec"
+    },
+    "%bz_close": {
+      "body": "bzclose(${1:bz});",
+      "prefix": "bz_close"
+    },
+    "%bz_compress": {
+      "body": "bzcompress(${1:source}${2:, ${3:blocksize}${4:, ${5:workfactor}}});",
+      "prefix": "bz_compress"
+    },
+    "%bz_compress:1": {
+      "body": "bzcompress(${1:source}, 1${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:1"
+    },
+    "%bz_compress:2": {
+      "body": "bzcompress(${1:source}, 2${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:2"
+    },
+    "%bz_compress:3": {
+      "body": "bzcompress(${1:source}, 3${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:3"
+    },
+    "%bz_compress:4": {
+      "body": "bzcompress(${1:source}, 4${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:4"
+    },
+    "%bz_compress:5": {
+      "body": "bzcompress(${1:source}, 5${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:5"
+    },
+    "%bz_compress:6": {
+      "body": "bzcompress(${1:source}, 6${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:6"
+    },
+    "%bz_compress:7": {
+      "body": "bzcompress(${1:source}, 7${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:7"
+    },
+    "%bz_compress:8": {
+      "body": "bzcompress(${1:source}, 8${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:8"
+    },
+    "%bz_compress:9": {
+      "body": "bzcompress(${1:source}, 9${2:, ${3:workfactor}});",
+      "prefix": "bz_compress:9"
+    },
+    "%bz_decompress": {
+      "body": "bzdecompress(${1:source}${2:, ${3:small}});",
+      "prefix": "bz_decompress"
+    },
+    "%bz_decompress:small": {
+      "body": "bzdecompress(${1:source}, true);",
+      "prefix": "bz_decompress:small"
+    },
+    "%bz_errno": {
+      "body": "bzerrno(${1:bz});",
+      "prefix": "bz_errno"
+    },
+    "%bz_error": {
+      "body": "bzerror(${1:bz});",
+      "prefix": "bz_error"
+    },
+    "%bz_errstr": {
+      "body": "bzerrstr(${1:bz});",
+      "prefix": "bz_errstr"
+    },
+    "%bz_flush": {
+      "body": "bzflush(${1:bz});",
+      "prefix": "bz_flush"
+    },
+    "%bz_open": {
+      "body": "bzopen(${1:filename}, ${2:mode});",
+      "prefix": "bz_open"
+    },
+    "%bz_read": {
+      "body": "bzread(${1:bz}${2:, ${3:length}});",
+      "prefix": "bz_read"
+    },
+    "%bz_write": {
+      "body": "bzwrite(${1:bz}, ${2:data}${3:, ${4:length}});",
+      "prefix": "bz_write"
+    },
+    "%calinfo": {
+      "body": "cal_info(${1:calendar});",
+      "prefix": "calinfo"
+    },
+    "%calinfo:CAL_FRENCH": {
+      "body": "cal_info(CAL_FRENCH);",
+      "prefix": "calinfo:CAL_FRENCH"
+    },
+    "%calinfo:CAL_GREGORIAN": {
+      "body": "cal_info(CAL_GREGORIAN);",
+      "prefix": "calinfo:CAL_GREGORIAN"
+    },
+    "%calinfo:CAL_JEWISH": {
+      "body": "cal_info(CAL_JEWISH);",
+      "prefix": "calinfo:CAL_JEWISH"
+    },
+    "%calinfo:CAL_JULIAN": {
+      "body": "cal_info(CAL_JULIAN);",
+      "prefix": "calinfo:CAL_JULIAN"
+    },
+    "%check_date": {
+      "body": "checkdate(${1:day}, ${2:month}, ${3:year});",
+      "prefix": "check_date"
+    },
+    "%check_dnsrr": {
+      "body": "checkdnsrr(${1:host}${2:, ${3:type}});",
+      "prefix": "check_dnsrr"
+    },
+    "%check_dnsrr:A": {
+      "body": "checkdnsrr(${1:host}, A);",
+      "prefix": "check_dnsrr:A"
+    },
+    "%check_dnsrr:A6": {
+      "body": "checkdnsrr(${1:host}, A6);",
+      "prefix": "check_dnsrr:A6"
+    },
+    "%check_dnsrr:AAAA": {
+      "body": "checkdnsrr(${1:host}, AAAA);",
+      "prefix": "check_dnsrr:AAAA"
+    },
+    "%check_dnsrr:ANY": {
+      "body": "checkdnsrr(${1:host}, ANY);",
+      "prefix": "check_dnsrr:ANY"
+    },
+    "%check_dnsrr:CNAME": {
+      "body": "checkdnsrr(${1:host}, CNAME);",
+      "prefix": "check_dnsrr:CNAME"
+    },
+    "%check_dnsrr:MX": {
+      "body": "checkdnsrr(${1:host}, MX);",
+      "prefix": "check_dnsrr:MX"
+    },
+    "%check_dnsrr:NAPTR": {
+      "body": "checkdnsrr(${1:host}, NAPTR);",
+      "prefix": "check_dnsrr:NAPTR"
+    },
+    "%check_dnsrr:NS": {
+      "body": "checkdnsrr(${1:host}, NS);",
+      "prefix": "check_dnsrr:NS"
+    },
+    "%check_dnsrr:PTR": {
+      "body": "checkdnsrr(${1:host}, PTR);",
+      "prefix": "check_dnsrr:PTR"
+    },
+    "%check_dnsrr:SOA": {
+      "body": "checkdnsrr(${1:host}, SOA);",
+      "prefix": "check_dnsrr:SOA"
+    },
+    "%check_dnsrr:SRV": {
+      "body": "checkdnsrr(${1:host}, SRV);",
+      "prefix": "check_dnsrr:SRV"
+    },
+    "%check_dnsrr:TXT": {
+      "body": "checkdnsrr(${1:host}, TXT);",
+      "prefix": "check_dnsrr:TXT"
+    },
+    "%chunksplit": {
+      "body": "chunk_split(${1:body}${2:, ${3:chunklen}${4:, ${5:end}}});",
+      "prefix": "chunksplit"
+    },
+    "%classalias": {
+      "body": "class_alias(${1:original}, ${2:alias}${3:, ${4:autoload}});",
+      "prefix": "classalias"
+    },
+    "%classalias:false": {
+      "body": "class_alias(${1:original}, ${2:alias}, false);",
+      "prefix": "classalias:false"
+    },
+    "%classalias:true": {
+      "body": "class_alias(${1:original}, ${2:alias}, true);",
+      "prefix": "classalias:true"
+    },
+    "%classexists": {
+      "body": "class_exists(${1:class_name}${2:, ${3:autoload}});",
+      "prefix": "classexists"
+    },
+    "%classexists:false": {
+      "body": "class_exists(${1:class_name}, false);",
+      "prefix": "classexists:false"
+    },
+    "%classexists:true": {
+      "body": "class_exists(${1:class_name}, true);",
+      "prefix": "classexists:true"
+    },
+    "%classimplements": {
+      "body": "class_implements(${1:class}${2:, ${3:autoload}});",
+      "prefix": "classimplements"
+    },
+    "%classimplements:false": {
+      "body": "class_implements(${1:class}, false);",
+      "prefix": "classimplements:false"
+    },
+    "%classimplements:true": {
+      "body": "class_implements(${1:class}, true);",
+      "prefix": "classimplements:true"
+    },
+    "%classparents": {
+      "body": "class_parents(${1:class}${2:, ${3:autoload}});",
+      "prefix": "classparents"
+    },
+    "%classparents:false": {
+      "body": "class_parents(${1:class}, false);",
+      "prefix": "classparents:false"
+    },
+    "%classparents:true": {
+      "body": "class_parents(${1:class}, true);",
+      "prefix": "classparents:true"
+    },
+    "%classuses": {
+      "body": "class_uses(${1:class}${2:, ${3:autoload}});",
+      "prefix": "classuses"
+    },
+    "%classuses:false": {
+      "body": "class_uses(${1:class}, false);",
+      "prefix": "classuses:false"
+    },
+    "%classuses:true": {
+      "body": "class_uses(${1:class}, true);",
+      "prefix": "classuses:true"
+    },
+    "%close_dir": {
+      "body": "closedir(${1:dir_handle});",
+      "prefix": "close_dir"
+    },
+    "%close_log": {
+      "body": "closelog(${1});",
+      "prefix": "close_log"
+    },
+    "%connectionaborted": {
+      "body": "connection_aborted(${1});",
+      "prefix": "connectionaborted"
+    },
+    "%connectionstatus": {
+      "body": "connection_status(${1});",
+      "prefix": "connectionstatus"
+    },
+    "%convertuudecode": {
+      "body": "convert_uudecode(${1:data});",
+      "prefix": "convertuudecode"
+    },
+    "%convertuuencode": {
+      "body": "convert_uuencode(${1:data});",
+      "prefix": "convertuuencode"
+    },
+    "%countchars": {
+      "body": "count_chars(${1:string}${2:, ${3:mode}});",
+      "prefix": "countchars"
+    },
+    "%countchars:0": {
+      "body": "count_chars(${1:string}, 0);",
+      "prefix": "countchars:0"
+    },
+    "%countchars:1": {
+      "body": "count_chars(${1:string}, 1);",
+      "prefix": "countchars:1"
+    },
+    "%countchars:2": {
+      "body": "count_chars(${1:string}, 2);",
+      "prefix": "countchars:2"
+    },
+    "%countchars:3": {
+      "body": "count_chars(${1:string}, 3);",
+      "prefix": "countchars:3"
+    },
+    "%countchars:4": {
+      "body": "count_chars(${1:string}, 4);",
+      "prefix": "countchars:4"
+    },
+    "%createfunction": {
+      "body": "create_function(${1:args}, ${2:code});",
+      "prefix": "createfunction"
+    },
+    "%dateadd": {
+      "body": "date_add(${1:time}${2:, ${3:interval}});",
+      "prefix": "dateadd"
+    },
+    "%datecreate": {
+      "body": "date_create(${1:time}${2:, ${3:timezone}});",
+      "prefix": "datecreate"
+    },
+    "%get_dns_mx": {
+      "body": "getmxrr(${1:hostname}, ${2:&mxhosts}${3:, ${4:&weight}});",
+      "prefix": "get_dns_mx"
+    },
+    "%gz_decode": {
+      "body": "gzdecode(${1:data}${2:, ${3:length}});",
+      "prefix": "gz_decode"
+    },
+    "%gz_encode": {
+      "body": "gzencode(${1:data}${2:, ${3:level}${4:, ${5:encoding_mode}}});",
+      "prefix": "gz_encode"
+    },
+    "%gz_encode:FORCE_DEFLATE": {
+      "body": "gzencode(${1:data}${2:, ${3:level}}, FORCE_DEFLATE);",
+      "prefix": "gz_encode:FORCE_DEFLATE"
+    },
+    "%gz_encode:FORCE_GZIP": {
+      "body": "gzencode(${1:data}${2:, ${3:level}}, FORCE_GZIP);",
+      "prefix": "gz_encode:FORCE_GZIP"
+    },
+    "%image_font_height": {
+      "body": "imagefontheight(${1:int});",
+      "prefix": "image_font_height"
+    },
+    "%image_font_width": {
+      "body": "imagefontwidth(${1:int});",
+      "prefix": "image_font_width"
+    },
+    "%imap_get_acl": {
+      "body": "imap_getacl(${1:imap_stream}, ${2:mailbox});",
+      "prefix": "imap_get_acl"
+    },
+    "%imap_get_mailboxes": {
+      "body": "imap_getmailboxes(${1:imap_stream}, ${2:ref}, ${3:pattern});",
+      "prefix": "imap_get_mailboxes"
+    },
+    "%imap_get_subscribed": {
+      "body": "imap_getsubscribed(${1:imap_stream}, ${2:ref}, ${3:pattern});",
+      "prefix": "imap_get_subscribed"
+    },
+    "%imap_set_acl": {
+      "body": "imap_setacl(${1:imap_stream}, ${2:mailbox}, ${3:id}, ${4:rights});",
+      "prefix": "imap_set_acl"
+    },
+    "%imap_set_flag_full": {
+      "body": "imap_setflag_full(${1:imap_stream}, ${2:sequence}, ${3:flag}${4:, ${5:options}});",
+      "prefix": "imap_set_flag_full"
+    },
+    "%jsondecode": {
+      "body": "json_decode(${1:json}${2:, ${3:assoc}${4:, ${5:depth}${6:, ${7:options}}}});",
+      "prefix": "jsondecode"
+    },
+    "%jsondecode:JSON_BIGINT_AS_STRING": {
+      "body": "json_decode(${1:json}, ${2:assoc}, ${3:depth}, JSON_BIGINT_AS_STRING);",
+      "prefix": "jsondecode:JSON_BIGINT_AS_STRING"
+    },
+    "%jsonencode": {
+      "body": "json_encode(${1:value}${2:, ${3:options}${4:, ${5:depth}}});",
+      "prefix": "jsonencode"
+    },
+    "%jsonencode:JSON_FORCE_OBJECT": {
+      "body": "json_encode(${1:value}, JSON_FORCE_OBJECT${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_FORCE_OBJECT"
+    },
+    "%jsonencode:JSON_HEX_AMP": {
+      "body": "json_encode(${1:value}, JSON_HEX_AMP${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_HEX_AMP"
+    },
+    "%jsonencode:JSON_HEX_APOS": {
+      "body": "json_encode(${1:value}, JSON_HEX_APOS${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_HEX_APOS"
+    },
+    "%jsonencode:JSON_HEX_QUOT": {
+      "body": "json_encode(${1:value}, JSON_HEX_QUOT${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_HEX_QUOT"
+    },
+    "%jsonencode:JSON_HEX_TAG": {
+      "body": "json_encode(${1:value}, JSON_HEX_TAG${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_HEX_TAG"
+    },
+    "%jsonencode:JSON_NUMERIC_CHECK": {
+      "body": "json_encode(${1:value}, JSON_NUMERIC_CHECK${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_NUMERIC_CHECK"
+    },
+    "%jsonencode:JSON_PRETTY_PRINT": {
+      "body": "json_encode(${1:value}, JSON_PRETTY_PRINT${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_PRETTY_PRINT"
+    },
+    "%jsonencode:JSON_UNESCAPED_SLASHES": {
+      "body": "json_encode(${1:value}, JSON_UNESCAPED_SLASHES${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_UNESCAPED_SLASHES"
+    },
+    "%jsonencode:JSON_UNESCAPED_UNICODE": {
+      "body": "json_encode(${1:value}, JSON_UNESCAPED_UNICODE${2:, ${3:depth}});",
+      "prefix": "jsonencode:JSON_UNESCAPED_UNICODE"
+    },
+    "%obgetlength": {
+      "body": "ob_get_length();",
+      "prefix": "obgetlength"
+    },
+    "%php_version": {
+      "body": "phpversion(${1:extension});",
+      "prefix": "php_version"
+    },
+    "%raw_url_decode": {
+      "body": "rawurldecode(${1:str});",
+      "prefix": "raw_url_decode"
+    },
+    "%raw_url_encode": {
+      "body": "rawurlencode(${1:str});",
+      "prefix": "raw_url_encode"
+    },
+    "%sessiondecode": {
+      "body": "session_decode(${1:data});",
+      "prefix": "sessiondecode"
+    },
+    "%sessionencode": {
+      "body": "session_encode(${1:void});",
+      "prefix": "sessionencode"
+    },
+    "%set_cookie": {
+      "body": "setcookie(${1:name}${2:, ${3:value}${4:, ${5:expire}${6:, ${7:path}${8:, ${9:domain}${10:, ${11:secure}${12:, ${13:httponly}}}}}}});",
+      "prefix": "set_cookie"
+    },
+    "%set_locale": {
+      "body": "setlocale(${1:category}, ${2:locale});",
+      "prefix": "set_locale"
+    },
+    "%set_locale:LC_ALL": {
+      "body": "setlocale(LC_ALL, ${1:locale});",
+      "prefix": "set_locale:LC_ALL"
+    },
+    "%set_locale:LC_COLLATE": {
+      "body": "setlocale(LC_COLLATE, ${1:locale});",
+      "prefix": "set_locale:LC_COLLATE"
+    },
+    "%set_locale:LC_CTYPE": {
+      "body": "setlocale(LC_CTYPE, ${1:locale});",
+      "prefix": "set_locale:LC_CTYPE"
+    },
+    "%set_locale:LC_MESSAGES": {
+      "body": "setlocale(LC_MESSAGES, ${1:locale});",
+      "prefix": "set_locale:LC_MESSAGES"
+    },
+    "%set_locale:LC_MONETARY": {
+      "body": "setlocale(LC_MONETARY, ${1:locale});",
+      "prefix": "set_locale:LC_MONETARY"
+    },
+    "%set_locale:LC_NUMERIC": {
+      "body": "setlocale(LC_NUMERIC, ${1:locale});",
+      "prefix": "set_locale:LC_NUMERIC"
+    },
+    "%set_locale:LC_TIME": {
+      "body": "setlocale(LC_TIME, ${1:locale});",
+      "prefix": "set_locale:LC_TIME"
+    },
+    "%set_raw_cookie": {
+      "body": "setrawcookie(${1:name}${2:, ${3:value}${4:, ${5:expire}${6:, ${7:path}${8:, ${9:domain}${10:, ${11:secure}${12:, ${13:httponly}}}}}}});",
+      "prefix": "set_raw_cookie"
+    },
+    "%set_type": {
+      "body": "settype(${1:var}, ${2:type});",
+      "prefix": "set_type"
+    },
+    "%set_type:array": {
+      "body": "settype(${1:var}, \"array\");",
+      "prefix": "set_type:array"
+    },
+    "%set_type:boolean": {
+      "body": "settype(${1:var}, \"boolean\");",
+      "prefix": "set_type:boolean"
+    },
+    "%set_type:float": {
+      "body": "settype(${1:var}, \"float\");",
+      "prefix": "set_type:float"
+    },
+    "%set_type:integer": {
+      "body": "settype(${1:var}, \"integer\");",
+      "prefix": "set_type:integer"
+    },
+    "%set_type:null": {
+      "body": "settype(${1:var}, \"null\");",
+      "prefix": "set_type:null"
+    },
+    "%set_type:object": {
+      "body": "settype(${1:var}, \"object\");",
+      "prefix": "set_type:object"
+    },
+    "%set_type:string": {
+      "body": "settype(${1:var}, \"string\");",
+      "prefix": "set_type:string"
+    },
+    "%url_decode": {
+      "body": "urldecode(${1:str});",
+      "prefix": "url_decode"
+    },
+    "%url_encode": {
+      "body": "urlencode(${1:str});",
+      "prefix": "url_encode"
+    },
+    "%utf8decode": {
+      "body": "utf8_decode(${1:data});",
+      "prefix": "utf8decode"
+    },
+    "%utf8encode": {
+      "body": "utf8_encode(${1:data});",
+      "prefix": "utf8encode"
+    },
+    "%versioncompare": {
+      "body": "version_compare(${1:version1}, ${2:version2}${4:, ${5:operator}});",
+      "prefix": "versioncompare"
+    },
+    "%zendversion": {
+      "body": "zend_version();",
+      "prefix": "zendversion"
+    },
+    "%zlibdecode": {
+      "body": "zlib_decode(${1:data}${2:, ${2:max_decoded_len}});",
+      "prefix": "zlibdecode"
+    },
+    "%zlibencode": {
+      "body": "zlib_encode(${1:data}${2:, ${2:encoding}${4:, ${5:level}}});",
+      "prefix": "zlibencode"
+    }
+  }
+}

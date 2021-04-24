@@ -1,0 +1,300 @@
+{
+  ".source.php": {
+    "%arc_sin": {
+      "body": "asin(${1:float});",
+      "prefix": "arc_sin"
+    },
+    "%arc_sinh": {
+      "body": "asinh(${1:float});",
+      "prefix": "arc_sinh"
+    },
+    "%arc_tan": {
+      "body": "atan(${1:float});",
+      "prefix": "arc_tan"
+    },
+    "%arc_tan2": {
+      "body": "atan2(${1:x},${2:y});",
+      "prefix": "arc_tan2"
+    },
+    "%arc_tanh": {
+      "body": "atanh(${1:float});",
+      "prefix": "arc_tanh"
+    },
+    "%arcsin": {
+      "body": "asin(${1:float});",
+      "prefix": "arcsin"
+    },
+    "%arcsinh": {
+      "body": "asinh(${1:float});",
+      "prefix": "arcsinh"
+    },
+    "%arctan": {
+      "body": "atan(${1:float});",
+      "prefix": "arctan"
+    },
+    "%arctan2": {
+      "body": "atan2(${1:x},${2:y});",
+      "prefix": "arctan2"
+    },
+    "%arctanh": {
+      "body": "atanh(${1:float});",
+      "prefix": "arctanh"
+    },
+    "%array_count": {
+      "body": "count(${1:array_or_countable}${2:, ${3:${4:mode}}});",
+      "prefix": "array_count"
+    },
+    "%array_count:COUNT_RECURSIVE": {
+      "body": "count(${1:array_or_countable}, COUNT_RECURSIVE);",
+      "prefix": "array_count:COUNT_RECURSIVE"
+    },
+    "%array_current": {
+      "body": "current(${1:array});",
+      "prefix": "array_current"
+    },
+    "%array_reverse_sort": {
+      "body": "arsort(${1:array}${2:, ${3:sort_flags}});",
+      "prefix": "array_reverse_sort"
+    },
+    "%array_sort": {
+      "body": "asort(${1:array}${2:, ${3:sort_flags}});",
+      "prefix": "array_sort"
+    },
+    "%array_sort:SORT_FLAG_CASE": {
+      "body": "asort(${1:array}, SORT_FLAG_CASE);",
+      "prefix": "array_sort:SORT_FLAG_CASE"
+    },
+    "%array_sort:SORT_LOCALE_STRING": {
+      "body": "asort(${1:array}, SORT_LOCALE_STRING);",
+      "prefix": "array_sort:SORT_LOCALE_STRING"
+    },
+    "%array_sort:SORT_NATURAL": {
+      "body": "asort(${1:array}, SORT_NATURAL);",
+      "prefix": "array_sort:SORT_NATURAL"
+    },
+    "%array_sort:SORT_NUMERIC": {
+      "body": "asort(${1:array}, SORT_NUMERIC);",
+      "prefix": "array_sort:SORT_NUMERIC"
+    },
+    "%array_sort:SORT_REGULAR": {
+      "body": "asort(${1:array}, SORT_REGULAR);",
+      "prefix": "array_sort:SORT_REGULAR"
+    },
+    "%array_sort:SORT_STRING": {
+      "body": "asort(${1:array}, SORT_STRING);",
+      "prefix": "array_sort:SORT_STRING"
+    },
+    "%array_sort_reverse": {
+      "body": "arsort(${1:array}${3:, ${4:sort_flags}});",
+      "prefix": "array_sort_reverse"
+    },
+    "%array_sort_reverse:SORT_FLAG_CASE": {
+      "body": "arsort(${1:array}, SORT_FLAG_CASE);",
+      "prefix": "array_sort_reverse:SORT_FLAG_CASE"
+    },
+    "%array_sort_reverse:SORT_LOCALE_STRING": {
+      "body": "arsort(${1:array}, SORT_LOCALE_STRING);",
+      "prefix": "array_sort_reverse:SORT_LOCALE_STRING"
+    },
+    "%array_sort_reverse:SORT_NATURAL": {
+      "body": "arsort(${1:array}, SORT_NATURAL);",
+      "prefix": "array_sort_reverse:SORT_NATURAL"
+    },
+    "%array_sort_reverse:SORT_NUMERIC": {
+      "body": "arsort(${1:array}, SORT_NUMERIC);",
+      "prefix": "array_sort_reverse:SORT_NUMERIC"
+    },
+    "%array_sort_reverse:SORT_REGULAR": {
+      "body": "arsort(${1:array}, SORT_REGULAR);",
+      "prefix": "array_sort_reverse:SORT_REGULAR"
+    },
+    "%array_sort_reverse:SORT_STRING": {
+      "body": "arsort(${1:array}, SORT_STRING);",
+      "prefix": "array_sort_reverse:SORT_STRING"
+    },
+    "%bzip_close": {
+      "body": "bzclose(${1:bz});",
+      "prefix": "bzip_close"
+    },
+    "%bzip_compress": {
+      "body": "bzcompress(${1:source}${2:, ${3:blocksize}${4:, ${5:workfactor}}});",
+      "prefix": "bzip_compress"
+    },
+    "%bzip_compress:1": {
+      "body": "bzcompress(${1:source}, 1${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:1"
+    },
+    "%bzip_compress:2": {
+      "body": "bzcompress(${1:source}, 2${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:2"
+    },
+    "%bzip_compress:3": {
+      "body": "bzcompress(${1:source}, 3${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:3"
+    },
+    "%bzip_compress:4": {
+      "body": "bzcompress(${1:source}, 4${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:4"
+    },
+    "%bzip_compress:5": {
+      "body": "bzcompress(${1:source}, 5${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:5"
+    },
+    "%bzip_compress:6": {
+      "body": "bzcompress(${1:source}, 6${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:6"
+    },
+    "%bzip_compress:7": {
+      "body": "bzcompress(${1:source}, 7${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:7"
+    },
+    "%bzip_compress:8": {
+      "body": "bzcompress(${1:source}, 8${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:8"
+    },
+    "%bzip_compress:9": {
+      "body": "bzcompress(${1:source}, 9${2:, ${3:workfactor}}});",
+      "prefix": "bzip_compress:9"
+    },
+    "%bzip_decompress": {
+      "body": "bzdecompress(${1:source}${2:, ${3:small}});",
+      "prefix": "bzip_decompress"
+    },
+    "%bzip_decompress:small": {
+      "body": "bzdecompress(${1:source}, true);",
+      "prefix": "bzip_decompress:small"
+    },
+    "%bzip_error": {
+      "body": "bzerror(${1:bz});",
+      "prefix": "bzip_error"
+    },
+    "%bzip_error_number": {
+      "body": "bzerrno(${1:bz});",
+      "prefix": "bzip_error_number"
+    },
+    "%bzip_error_str": {
+      "body": "bzerrstr(${1:bz});",
+      "prefix": "bzip_error_str"
+    },
+    "%bzip_flush": {
+      "body": "bzflush(${1:bz});",
+      "prefix": "bzip_flush"
+    },
+    "%bzip_open": {
+      "body": "bzopen(${1:filename}, ${2:mode});",
+      "prefix": "bzip_open"
+    },
+    "%bzip_read": {
+      "body": "bzread(${1:bz}${2:, ${3:length}});",
+      "prefix": "bzip_read"
+    },
+    "%bzip_write": {
+      "body": "bzwrite(${1:bz}, ${2:data}${3:, ${4:${5:length}}});",
+      "prefix": "bzip_write"
+    },
+    "%change_dir": {
+      "body": "chdir('${1:directory}');",
+      "prefix": "change_dir"
+    },
+    "%change_group": {
+      "body": "chgrp(${1:filename}, ${2:group});",
+      "prefix": "change_group"
+    },
+    "%change_mode": {
+      "body": "chmod(${1:filename}, ${2:mode});",
+      "prefix": "change_mode"
+    },
+    "%change_owner": {
+      "body": "chown(${1:filename}, ${2:user});",
+      "prefix": "change_owner"
+    },
+    "%character_return": {
+      "body": "chr('${1:ascii}');",
+      "prefix": "character_return"
+    },
+    "%check_type_alnum": {
+      "body": "ctype_alnum(${1:text});",
+      "prefix": "check_type_alnum"
+    },
+    "%check_type_alpha": {
+      "body": "ctype_alpha(${1:text});",
+      "prefix": "check_type_alpha"
+    },
+    "%check_type_cntrl": {
+      "body": "ctype_cntrl(${1:text});",
+      "prefix": "check_type_cntrl"
+    },
+    "%check_type_digit": {
+      "body": "ctype_digit(${1:text});",
+      "prefix": "check_type_digit"
+    },
+    "%check_type_graph": {
+      "body": "ctype_graph(${1:text});",
+      "prefix": "check_type_graph"
+    },
+    "%check_type_lower": {
+      "body": "ctype_lower(${1:text});",
+      "prefix": "check_type_lower"
+    },
+    "%check_type_print": {
+      "body": "ctype_print(${1:text});",
+      "prefix": "check_type_print"
+    },
+    "%check_type_punct": {
+      "body": "ctype_punct(${1:text});",
+      "prefix": "check_type_punct"
+    },
+    "%check_type_space": {
+      "body": "ctype_space(${1:text});",
+      "prefix": "check_type_space"
+    },
+    "%check_type_upper": {
+      "body": "ctype_upper(${1:text});",
+      "prefix": "check_type_upper"
+    },
+    "%check_type_xdigit": {
+      "body": "ctype_xdigit(${1:text});",
+      "prefix": "check_type_xdigit"
+    },
+    "%crc32_encode": {
+      "body": "crc32(${1:string});",
+      "prefix": "crc32_encode"
+    },
+    "%encode_crc32": {
+      "body": "crc32(${1:string});",
+      "prefix": "encode_crc32"
+    },
+    "%file_copy": {
+      "body": "copy(${1:source}, ${2:dest}${3:, ${4:context}});",
+      "prefix": "file_copy"
+    },
+    "%filecopy": {
+      "body": "copy(${1:source}, ${2:dest}${3:, ${4:context}});",
+      "prefix": "filecopy"
+    },
+    "%get_mhash_name": {
+      "body": "mhash_get_hash_name(${1:hash});",
+      "prefix": "get_mhash_name"
+    },
+    "%gzip_decode": {
+      "body": "gzdecode(${1:data}${2:, ${3:length}});",
+      "prefix": "gzip_decode"
+    },
+    "%gzip_encode": {
+      "body": "gzencode(${1:data}${2:, ${3:level}${4:, ${5:encoding_mode}}});",
+      "prefix": "gzip_encode"
+    },
+    "%gzip_encode:FORCE_DEFLATE": {
+      "body": "gzencode(${1:data}${2:, ${3:level}}, FORCE_DEFLATE);",
+      "prefix": "gzip_encode:FORCE_DEFLATE"
+    },
+    "%gzip_encode:FORCE_GZIP": {
+      "body": "gzencode(${1:data}${2:, ${3:level}}, FORCE_GZIP);",
+      "prefix": "gzip_encode:FORCE_GZIP"
+    },
+    "%postgres_version": {
+      "body": "pg_version(${1:connection});",
+      "prefix": "postgres_version"
+    }
+  }
+}

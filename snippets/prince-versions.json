@@ -1,0 +1,360 @@
+{
+  ".source.php": {
+    "%bin2dec": {
+      "body": "bindec(${1:binary_string});",
+      "prefix": "bin2dec"
+    },
+    "%bin_to_dec": {
+      "body": "bindec(${1:binary_string});",
+      "prefix": "bin_to_dec"
+    },
+    "%bin_to_hex": {
+      "body": "bin2hex${1:str};",
+      "prefix": "bin_to_hex"
+    },
+    "%bintohex": {
+      "body": "bin2hex${1:str};",
+      "prefix": "bintohex"
+    },
+    "%cal2jd": {
+      "body": "cal_to_jd(${1:calendar}, ${2:month}, ${3:day}, ${4:year});",
+      "prefix": "cal2jd"
+    },
+    "%cal_to_jd": {
+      "body": "cal_to_jd(${1:calendar}, ${2:month}, ${3:day}, ${4:year});",
+      "prefix": "cal_to_jd"
+    },
+    "%deg_to_rad": {
+      "body": "deg2rad(${1:float});",
+      "prefix": "deg_to_rad"
+    },
+    "%degtorad": {
+      "body": "deg2rad(${1:float});",
+      "prefix": "degtorad"
+    },
+    "%f2k": {
+      "body": "ftok(${1:pathname}, ${2:proj});",
+      "prefix": "f2k"
+    },
+    "%f_to_k": {
+      "body": "ftok(${1:pathname}, ${2:proj});",
+      "prefix": "f_to_k"
+    },
+    "%french2jd": {
+      "body": "frenchtojd(${1:month}, ${2:day}, ${3:year});",
+      "prefix": "french2jd"
+    },
+    "%french_to_jd": {
+      "body": "frenchtojd(${1:month}, ${2:day}, ${3:year});",
+      "prefix": "french_to_jd"
+    },
+    "%gregorian2jd": {
+      "body": "gregoriantojd(${1:month}, ${2:day}, ${3:year});",
+      "prefix": "gregorian2jd"
+    },
+    "%gregorian_to_jd": {
+      "body": "gregoriantojd(${1:month}, ${2:day}, ${3:year});",
+      "prefix": "gregorian_to_jd"
+    },
+    "%hex_to_bin": {
+      "body": "hex2bin(${1:data});",
+      "prefix": "hex_to_bin"
+    },
+    "%hextobin": {
+      "body": "hex2bin(${1:data});",
+      "prefix": "hextobin"
+    },
+    "%image2wbmp": {
+      "body": "image2wbmp(${1:image}${2:, ${3:filename}}${4:, ${5:threshold}});",
+      "prefix": "image2wbmp"
+    },
+    "%image_to_wbmp": {
+      "body": "image2wbmp(${1:image}${2:, ${3:filename}}${4:, ${5:threshold}});",
+      "prefix": "image_to_wbmp"
+    },
+    "%imagetowbmp": {
+      "body": "image2wbmp(${1:image}${2:, ${3:filename}}${4:, ${5:threshold}});",
+      "prefix": "imagetowbmp"
+    },
+    "%imagetruecolor2palette": {
+      "body": "imagetruecolortopalette(${1:image}, ${2:dither}, ${3:ncolors});",
+      "prefix": "imagetruecolor2palette"
+    },
+    "%imagetruecolor_to_palette": {
+      "body": "imagetruecolortopalette(${1:image}, ${2:dither}, ${3:ncolors});",
+      "prefix": "imagetruecolor_to_palette"
+    },
+    "%imagetype2extension": {
+      "body": "image_type_to_extension(${1:imagetype}${2:, ${3:include_dot}});",
+      "prefix": "imagetype2extension"
+    },
+    "%imagetype2mimetype": {
+      "body": "image_type_to_mime_type${1:imagetype};",
+      "prefix": "imagetype2mimetype"
+    },
+    "%imagetypetoextension": {
+      "body": "image_type_to_extension(${1:imagetype}${2:, ${3:include_dot}});",
+      "prefix": "imagetypetoextension"
+    },
+    "%imagetypetomimetype": {
+      "body": "image_type_to_mime_type${1:imagetype};",
+      "prefix": "imagetypetomimetype"
+    },
+    "%inet_n2p": {
+      "body": "inet_ntop(${1:in_addr});",
+      "prefix": "inet_n2p"
+    },
+    "%inet_n_to_p": {
+      "body": "inet_ntop(${1:in_addr});",
+      "prefix": "inet_n_to_p"
+    },
+    "%inet_p2n": {
+      "body": "inet_pton(${1:address});",
+      "prefix": "inet_p2n"
+    },
+    "%inet_p_to_n": {
+      "body": "inet_pton(${1:address});",
+      "prefix": "inet_p_to_n"
+    },
+    "%ip_to_long": {
+      "body": "ip2long(${1:ip_address});",
+      "prefix": "ip_to_long"
+    },
+    "%iptolong": {
+      "body": "ip2long(${1:ip_address});",
+      "prefix": "iptolong"
+    },
+    "%jd2cal": {
+      "body": "cal_from_jd(${1:jd}, ${2:calendar});",
+      "prefix": "jd2cal"
+    },
+    "%jd2cal:CAL_FRENCH": {
+      "body": "cal_from_jd(${1:jd}, CAL_FRENCH);",
+      "prefix": "jd2cal:CAL_FRENCH"
+    },
+    "%jd2cal:CAL_GREGORIAN": {
+      "body": "cal_from_jd(${1:jd}, CAL_GREGORIAN);",
+      "prefix": "jd2cal:CAL_GREGORIAN"
+    },
+    "%jd2cal:CAL_JEWISH": {
+      "body": "cal_from_jd(${1:jd}, CAL_JEWISH);",
+      "prefix": "jd2cal:CAL_JEWISH"
+    },
+    "%jd2cal:CAL_JULIAN": {
+      "body": "cal_from_jd(${1:jd}, CAL_JULIAN);",
+      "prefix": "jd2cal:CAL_JULIAN"
+    },
+    "%jd2french": {
+      "body": "jdtofrench(${1:juliandaycount});",
+      "prefix": "jd2french"
+    },
+    "%jd2gregorian": {
+      "body": "jdtogregorian(${1:julianday});",
+      "prefix": "jd2gregorian"
+    },
+    "%jd2jewish": {
+      "body": "jdtojewish(${1:juliandaycount}${2:, ${3:hebrew}}${4:, ${5:fl}});",
+      "prefix": "jd2jewish"
+    },
+    "%jd2jewish:hebrew": {
+      "body": "jdtojewish(${1:juliandaycount}, true, ${2:${3:fl}});",
+      "prefix": "jd2jewish:hebrew"
+    },
+    "%jd2jewish:hebrew:CAL_JEWISH_ADD_ALAFIM": {
+      "body": "jdtojewish(${1:juliandaycount}, true, CAL_JEWISH_ADD_ALAFIM);",
+      "prefix": "jd2jewish:hebrew:CAL_JEWISH_ADD_ALAFIM"
+    },
+    "%jd2jewish:hebrew:CAL_JEWISH_ADD_ALAFIM_GERESH": {
+      "body": "jdtojewish(${1:juliandaycount}, true, CAL_JEWISH_ADD_ALAFIM_GERESH);",
+      "prefix": "jd2jewish:hebrew:CAL_JEWISH_ADD_ALAFIM_GERESH"
+    },
+    "%jd2jewish:hebrew:CAL_JEWISH_ADD_GERESHAYIM": {
+      "body": "jdtojewish(${1:juliandaycount}, true, CAL_JEWISH_ADD_GERESHAYIM);",
+      "prefix": "jd2jewish:hebrew:CAL_JEWISH_ADD_GERESHAYIM"
+    },
+    "%jd2julian": {
+      "body": "jdtojulian(${1:julianday});",
+      "prefix": "jd2julian"
+    },
+    "%jd2unix": {
+      "body": "jdtounix(${1:jday});",
+      "prefix": "jd2unix"
+    },
+    "%jd_to_cal": {
+      "body": "cal_from_jd(${1:jd}, ${2:calendar});",
+      "prefix": "jd_to_cal"
+    },
+    "%jd_to_cal:CAL_FRENCH": {
+      "body": "cal_from_jd(${1:jd}, CAL_FRENCH);",
+      "prefix": "jd_to_cal:CAL_FRENCH"
+    },
+    "%jd_to_cal:CAL_GREGORIAN": {
+      "body": "cal_from_jd(${1:jd}, CAL_GREGORIAN);",
+      "prefix": "jd_to_cal:CAL_GREGORIAN"
+    },
+    "%jd_to_cal:CAL_JEWISH": {
+      "body": "cal_from_jd(${1:jd}, CAL_JEWISH);",
+      "prefix": "jd_to_cal:CAL_JEWISH"
+    },
+    "%jd_to_cal:CAL_JULIAN": {
+      "body": "cal_from_jd(${1:jd}, CAL_JULIAN);",
+      "prefix": "jd_to_cal:CAL_JULIAN"
+    },
+    "%jd_to_french": {
+      "body": "jdtofrench(${1:juliandaycount});",
+      "prefix": "jd_to_french"
+    },
+    "%jd_to_gregorian": {
+      "body": "jdtogregorian(${1:julianday});",
+      "prefix": "jd_to_gregorian"
+    },
+    "%jd_to_jewish": {
+      "body": "jdtojewish(${1:juliandaycount}${2:, ${3:hebrew}${4:, ${5:fl}});",
+      "prefix": "jd_to_jewish"
+    },
+    "%jd_to_jewish:hebrew": {
+      "body": "jdtojewish(${1:juliandaycount}, true, ${2:${3:fl}});",
+      "prefix": "jd_to_jewish:hebrew"
+    },
+    "%jd_to_julian": {
+      "body": "jdtojulian(${1:julianday});",
+      "prefix": "jd_to_julian"
+    },
+    "%jd_to_unix": {
+      "body": "jdtounix(${1:jday});",
+      "prefix": "jd_to_unix"
+    },
+    "%jdtocal": {
+      "body": "cal_from_jd(${1:jd}, ${2:calendar});",
+      "prefix": "jdtocal"
+    },
+    "%jdtocal:CAL_FRENCH": {
+      "body": "cal_from_jd(${1:jd}, CAL_FRENCH);",
+      "prefix": "jdtocal:CAL_FRENCH"
+    },
+    "%jdtocal:CAL_GREGORIAN": {
+      "body": "cal_from_jd(${1:jd}, CAL_GREGORIAN);",
+      "prefix": "jdtocal:CAL_GREGORIAN"
+    },
+    "%jdtocal:CAL_JEWISH": {
+      "body": "cal_from_jd(${1:jd}, CAL_JEWISH);",
+      "prefix": "jdtocal:CAL_JEWISH"
+    },
+    "%jdtocal:CAL_JULIAN": {
+      "body": "cal_from_jd(${1:jd}, CAL_JULIAN);",
+      "prefix": "jdtocal:CAL_JULIAN"
+    },
+    "%jewish2jd": {
+      "body": "jewishtojd(${1:month}, ${2:day}, ${3:year});",
+      "prefix": "jewish2jd"
+    },
+    "%jewish_to_jd": {
+      "body": "jewishtojd(${1:month}, ${2:day}, ${3:year});",
+      "prefix": "jewish_to_jd"
+    },
+    "%jpeg_to_wbmp": {
+      "body": "",
+      "prefix": "jpeg_to_wbmp"
+    },
+    "%jpegtowbmp": {
+      "body": "jpeg2wbmp(${1:jpegname}, ${2:wbmpname}${4:, ${3:dest_height}}${4:, ${5:dest_weight}}${6:, ${7:threshold}});",
+      "prefix": "jpegtowbmp"
+    },
+    "%julian2jd": {
+      "body": "juliantojd(${1:month}, ${2:day}, ${3:year});",
+      "prefix": "julian2jd"
+    },
+    "%julian_to_jd": {
+      "body": "juliantojd(${1:month}, ${2:day}, ${3:year});",
+      "prefix": "julian_to_jd"
+    },
+    "%long_to_ip": {
+      "body": "long2ip(${1:proper_address});",
+      "prefix": "long_to_ip"
+    },
+    "%longtoip": {
+      "body": "long2ip(${1:proper_address});",
+      "prefix": "longtoip"
+    },
+    "%mb_str2lower": {
+      "body": "mb_strtolower(${1:str}${2:, ${3:encoding}});",
+      "prefix": "mb_str2lower"
+    },
+    "%mb_str2upper": {
+      "body": "mb_strtoupper(${1:str}${2:, ${3:encoding}});",
+      "prefix": "mb_str2upper"
+    },
+    "%mb_str_to_lower": {
+      "body": "mb_strtolower(${1:str}${2:, ${3:encoding}});",
+      "prefix": "mb_str_to_lower"
+    },
+    "%mb_str_to_upper": {
+      "body": "mb_strtoupper(${1:str}${2:, ${3:encoding}});",
+      "prefix": "mb_str_to_upper"
+    },
+    "%nl_to_br": {
+      "body": "nl2br(${1:string}${2:, ${3:is_xhtml}});",
+      "prefix": "nl_to_br"
+    },
+    "%nltobr": {
+      "body": "nl2br(${1:string}${2:, ${3:is_xhtml}});",
+      "prefix": "nltobr"
+    },
+    "%png_to_wbmp": {
+      "body": "png2wbmp(${1:pngname}, ${2:wbmpname}${4:, ${3:dest_height}}${4:, ${5:dest_weight}}${6:, ${7:threshold}});",
+      "prefix": "png_to_wbmp"
+    },
+    "%pngtowbmp": {
+      "body": "png2wbmp(${1:pngname}, ${2:wbmpname}${4:, ${3:dest_height}}${4:, ${5:dest_weight}}${6:, ${7:threshold}});",
+      "prefix": "pngtowbmp"
+    },
+    "%rad2deg": {
+      "body": "rad2deg(${1:number});",
+      "prefix": "rad2deg"
+    },
+    "%rad_to_deg": {
+      "body": "rad2deg(${1:number});",
+      "prefix": "rad_to_deg"
+    },
+    "%str2lower": {
+      "body": "strtolower(${1:str});",
+      "prefix": "str2lower"
+    },
+    "%str2time": {
+      "body": "strtotime(${1:time}${2:, ${3:now}});",
+      "prefix": "str2time"
+    },
+    "%str2upper": {
+      "body": "strtoupper(${1:str});",
+      "prefix": "str2upper"
+    },
+    "%str_to_lower": {
+      "body": "strtolower(${1:str});",
+      "prefix": "str_to_lower"
+    },
+    "%str_to_time": {
+      "body": "strtotime(${1:time}${2:, ${3:now}});",
+      "prefix": "str_to_time"
+    },
+    "%str_to_upper": {
+      "body": "strtoupper(${1:str});",
+      "prefix": "str_to_upper"
+    },
+    "%streamcopy2stream": {
+      "body": "stream_copy_to_stream(${1:source}, ${2:dest}${4:, ${3:maxlenght}${4:, ${5:offset}}});",
+      "prefix": "streamcopy2stream"
+    },
+    "%streamcopytostream": {
+      "body": "stream_copy_to_stream(${1:source}, ${2:dest}${4:, ${3:maxlenght}${4:, ${5:offset}}});",
+      "prefix": "streamcopytostream"
+    },
+    "%unix2jd": {
+      "body": "unixtojd(${1:timestamp);",
+      "prefix": "unix2jd"
+    },
+    "%unix_to_jd": {
+      "body": "unixtojd(${1:timestamp);",
+      "prefix": "unix_to_jd"
+    }
+  }
+}

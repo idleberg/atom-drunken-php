@@ -17,15 +17,21 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "devDependencies": {
-    "coffeelint-stylish": "^0.1.2",
-    "gulp": "^4.0.0",
-    "gulp-coffeelint": "^0.6.0",
-    "gulp-debug": "^3.0.0",
-    "gulp-jsonlint": "^1.2.0",
-    "husky": "^0.14.3"
-  },
   "scripts": {
-    "test": "gulp lint"
+    "lint": "jsonlint snippets/*.json --quiet",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "husky": ">=4.3 <5",
+    "jsonlint": "^1.6.3",
+    "lint-staged": "^10.5.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.json": "jsonlint --quiet"
   }
 }
