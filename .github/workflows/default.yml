@@ -36,6 +36,3 @@ jobs:
 
       - name: Lint Source
         run: npm run lint --if-present
-
-      - name: Build Source
-        run: npm run build --if-present
