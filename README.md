@@ -3,7 +3,7 @@
 [![apm](https://flat.badgen.net/apm/license/drunken-php)](https://atom.io/packages/drunken-php)
 [![apm](https://flat.badgen.net/apm/v/drunken-php)](https://atom.io/packages/drunken-php)
 [![apm](https://flat.badgen.net/apm/dl/drunken-php)](https://atom.io/packages/drunken-php)
-[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-drunken-php)](https://circleci.com/gh/idleberg/atom-drunken-php)
+[![CI](https://img.shields.io/github/workflow/status/idleberg/atom-drunken-php/CI?style=flat-square)](https://github.com/idleberg/atom-drunken-php/actions)
 
 ## Description
 
